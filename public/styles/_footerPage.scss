@@ -1,0 +1,175 @@
+@media screen and (min-width: 1200px) {
+    #footer-page {
+        height: 70vh;
+        width: 100%;
+        background: url('https://www.carbonbrief.org/wp-content/uploads/2019/09/Blue-green-sea-surface-background-with-fishes-full-frame-composition-DWGX61-1550x804.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .footer-page-opacity {
+        height: 70vh;
+        width: 100%;
+        background: #fff;
+        opacity: 1;
+        color: #000;
+    }
+
+    .footer-display {
+        display: flex;
+        height: 100%;
+        width: 100%;
+    }
+
+    .footer-display-1 {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-display-2 {
+        flex: 1; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .footer-content {
+        height: 80%;
+        width: 80%;
+    }
+
+    .footer-heading {
+        color: $color1;
+        font-size: 52px;
+        font-family: 'Cormorant Garamond', serif;
+        text-align: center;
+    }
+
+    .footer-p {
+        font-size: 24px;
+        color: $color1;
+        text-align: center;
+    }
+
+    .telefon {
+        margin-top: 3vh;
+    }
+
+    .vrijeme-p {
+        margin-bottom: 1vh;    
+    }
+
+    #map {
+        height: 100%;
+        width: 100%;
+    }
+
+    .footer-content2 {
+        height: 100%;
+        width: 100%;    
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #footer-page {
+        height: 140vh;
+        width: 100%;
+        background: url('https://www.carbonbrief.org/wp-content/uploads/2019/09/Blue-green-sea-surface-background-with-fishes-full-frame-composition-DWGX61-1550x804.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .footer-page-opacity {
+        height: 70vh;
+        width: 100%;
+        background: $colorRed;
+        opacity: 0.9;
+    }
+
+    .footer-heading-wrapp {
+        width: 100%;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-display {
+        display: flex;
+        flex-direction: column;
+        height: 85%;
+        width: 100%;
+    }
+
+    .footer-display-1 {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-display-2 {
+        flex: 1; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-content {
+        height: 80%;
+        width: 80%;
+    }
+
+    .footer-heading {
+        color: $color1;
+        font-size: 52px;
+        font-family: 'Cormorant Garamond', serif;
+        text-align: center;
+    }
+
+    .footer-p {
+        font-size: 24px;
+        color: $color1;
+        text-align: center;
+    }
+
+    .telefon {
+        margin-top: 3vh;
+    }
+
+    .vrijeme-p {
+        margin-bottom: 1vh;    
+    }
+
+    #map {
+        height: 100%;
+        width: 320px;
+    }
+
+    .content2 {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+
+
+/////////
+footer {
+    height: 5vh;
+    text-align: center;
+    line-height: 5vh;
+    font-weight: bold;
+    
+    a {
+        text-decoration: underline;
+        color: $colorRed;
+    }
+}

@@ -1,0 +1,72 @@
+@import './variables';
+@import './header';
+@import './landingPage';
+@import './servicesPage';
+@import './aboutPage';
+@import './specialPage';
+@import './menuPage';
+@import './commentPage';
+@import './slider';
+@import './footerPage';
+@import './animation';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border;
+    //font-family: 'Cormorant Garamond', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#page-wrapp {
+    height: 100%;
+    width: 100%;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #333;
+  opacity: 1; /* Firefox */
+}
+
+:focus {
+    outline: none;
+}
+
+::selection {
+    color: $colorRed;
+    background-color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:after {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 0%;
+   border-bottom: 2px solid $colorRed;
+   transition: 0.8s;
+}
+
+a:hover:after {
+   width: 100%;
+}
+
+p {
+    z-index: 10;
+}
+
+img {
+    z-index: 1000;
+}
+
+html {
+    overflow-x: hidden;
+}

@@ -1,0 +1,290 @@
+@media screen and (min-width: 1200px) {   
+   #comment-page {
+        height: 100vh;
+        width: 100%;
+
+        #comment-page-wrapp {
+            height: 100%;
+            width: 70%;
+            margin-left: 15%;
+            min-width: 1000px;
+
+            #comment-form-wrapp {
+                height: 30vh;
+                width: 100%;
+                margin-top: 10vh;
+
+                #comment-form-container {
+                    height: 100%;
+                    width: 70%;
+                    margin-left: 15%;
+
+                    form {
+                        height: 100%;
+                        width: 100%;
+                        flex-direction: column;
+                        display: flex;
+
+                        #input-comment-wrapp {
+                            display: flex;
+                            flex-direction: column;
+
+                            #input-comment-text {
+                                width: 100%;
+                                margin-top: 7vh;
+                            }
+
+                            input {
+                                border-top: none;
+                                border-left: none;
+                                border-right: none;
+                                border-bottom: 2px solid $colorGrey;
+                                border-radius: 0;
+                                font-size: 22px;
+                            }
+
+                            input:focus {
+                                border-bottom: 2px solid $colorGrey;
+                                transition: 0.4s;
+                            }   
+
+                            #input-comment-name {
+                                margin-top: 8vh;
+                                width: 10%;
+                            }
+
+                            #input-group-2 {
+                                display: flex;
+
+                                    input {
+                                        flex: 1;
+                                    }
+
+                                #comments-button-wrapp {
+                                    flex: 1;
+                                    display: flex;
+                                    justify-content: flex-end;
+                                    align-items: flex-end;
+
+                                    button {
+                                        height: 5vh;
+                                        width: 10vw;
+                                        border: none;
+                                        background: $colorRed;
+                                        color: #fff;
+                                        font-size: 18px;
+                                        cursor: pointer;
+                                    }
+                                
+                                    button:hover {
+                                        transition: 0.4s;
+                                        background: $color1;
+                                        border: 3px solid $colorRed;
+                                        color: $colorBlack  ;
+                                    }    
+                                }   
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 551px) and (max-width: 1199px) {   
+   #comment-page {
+        height: 130vh;
+        width: 100%;
+
+        #comment-page-wrapp {
+            height: 100%;
+            width: 90%;
+            margin-left: 5%;
+
+            #comment-form-wrapp {
+                height: 40vh;
+                width: 100%;
+                margin-top: 15vh;
+
+                #comment-form-container {
+                    height: 100%;
+                    width: 90%;
+                    //margin-left: 5%;
+
+                    form {
+                        height: 100%;
+                        width: 100%;
+                        flex-direction: column;
+                        display: flex;
+
+                        #input-comment-wrapp {
+                            display: flex;
+                            flex-direction: column;
+
+                            #input-comment-text {
+                                width: 90%;
+                                margin-top: 7vh;
+                            }
+
+                            input {
+                                border-top: none;
+                                border-left: none;
+                                border-right: none;
+                                border-bottom: 2px solid $colorGrey;
+                                border-radius: 0;
+                                margin-left: 10%;
+                                font-size: 22px;
+                            }
+
+                            input:focus {
+                                border-bottom: 2px solid $colorYellow;
+                                transition: 0.4s;
+                            }   
+
+                            #input-comment-name {
+                                margin-top: 10vh;
+                                max-width: 300px;
+                            }
+
+                           #input-group-2 {
+                                display: grid;
+                                grid-template-columns: 1fr;
+
+                                    input {
+                                        width: 90%;
+                                    }
+
+                                #comments-button-wrapp {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin-left: 10%;
+
+                                    button {
+                                        margin-top: 5vh;
+                                        height: 5vh;
+                                        width: 22vw;
+                                        border: none;
+                                        background: $colorYellow;
+                                        color: #333;
+                                        font-size: 18px;
+                                        cursor: pointer;
+                                        border: 1px solid $colorRed;
+                                    }
+                                
+                                    button:hover {
+                                        transition: 0.4s;
+                                        background: $colorRed;
+                                        color: #fff;
+                                    }    
+                                }   
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {   
+   #comment-page {
+        height: 150vh;
+        width: 100%;
+
+        #comment-page-wrapp {
+            height: 150vh;
+            width: 90%;
+            margin-left: 5%;
+
+            #comment-form-wrapp {
+                height: 45vh;
+                width: 100%;
+                margin-top: 15vh;
+
+                #comment-form-container {
+                    height: 100%;
+                    width: 90%;
+                    //margin-left: 5%;
+
+                    form {
+                        height: 100%;
+                        width: 100%;
+                        flex-direction: column;
+                        display: flex;
+
+                        #input-comment-wrapp {
+                            display: flex;
+                            flex-direction: column;
+
+                            #input-comment-text {
+                                width: 90%;
+                                margin-top: 7vh;
+                            }
+
+                            input {
+                                border-top: none;
+                                border-left: none;
+                                border-right: none;
+                                border-bottom: 2px solid $colorRed;
+                                border-radius: 0;
+                                margin-left: 10%;
+                                font-size: 22px;
+                            }
+
+                            input:focus {
+                                border-bottom: 2px solid $colorYellow;
+                            }   
+
+                            #input-comment-name {
+                                margin-top: 10vh;
+                                width: 30%;
+                            }
+
+                            #input-group-2 {
+                                display: grid;
+                                grid-template-columns: 1fr;
+
+                                    input {
+                                        width: 90%;
+                                    }
+
+                                #comments-button-wrapp {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin-left: 10%;
+
+                                    button {
+                                        margin-top: 5vh;
+                                        height: 5vh;
+                                        width: 32vw;
+                                        border: none;
+                                        background: $colorYellow;
+                                        color: #333;
+                                        font-size: 18px;
+                                        cursor: pointer;
+                                        border: 1px solid $colorRed;
+                                    }
+                                
+                                    button:hover {
+                                        transition: 0.4s;
+                                        background: $colorRed;
+                                        color: #fff;
+                                    }    
+                                }   
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.shadowed {
+    transition: 0.4s;
+    //box-shadow: 0 0 15px #ddd;
+}
