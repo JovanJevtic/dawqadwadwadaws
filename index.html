@@ -25,13 +25,10 @@
 
 <body>
 
-    <!--
-    <div id="particles-js" style="position: fixed;  height: 90vh; width: 100%; margin-top: 10vh; z-index: 4;" ></div>
-    -->
-
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/bs_BA/sdk.js#xfbml=1&version=v8.0" nonce="IqtcQfts"></script>
 
     <div id="page-wrapp">
-
         <header id="header" class="fixed-header">
             <nav>
 
@@ -539,7 +536,7 @@
 
         <section id="comment-page">
 
-            <%= comments %>
+            <div class="fb-comments" data-href="http://localhost:5500/index.html" data-numposts="10" data-width=""></div>
 
         </section>
 
