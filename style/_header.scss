@@ -1,0 +1,118 @@
+header {
+    height: 80px;
+    width: 100%;
+
+    nav {
+        height: 100%;
+        display: flex;
+        
+        .logo-wrapp {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        
+            .logo {
+                font-size: 38px;
+                font-family: 'Dancing Script', cursive;
+                color: #fff;
+            }
+        }
+
+        .menu-wrapp {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .hamburger {
+                height: 22px;
+                width: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-end;
+                cursor: pointer;
+                z-index: 50;
+
+                .line {
+                    height: 1px;
+                    width: 30px;
+                    background: #fff;
+                }
+
+                .hamburger-active {
+                    background: red;
+                    opacity: 1;
+                    position: fixed;
+
+                    .line:nth-child(1) {
+                        transform: rotate(55deg) translateY(15px);
+                        transition: 0.6s;
+                        background: #000;
+                        transform-origin: bottom;
+                        width: 30px;
+                        opacity: 1;
+                    }
+    
+                    .line:nth-child(2) {
+                        opacity: 0;
+                        transition: 0.6s;
+                        background: #000;
+                    }
+    
+                    .line:nth-child(3) {
+                        transform: rotate(-55deg) translateY(-15px);
+                        transition: 0.6s;
+                        background: #000;
+                        width: 30px;
+                        opacity: 1;
+                    }
+                }  
+            }
+        }
+
+        .header-expanded {
+            z-index: 5;
+            position: fixed;
+            background: $grey;
+            height: 100%;
+            width: 100%;
+            z-index: 50;
+            left: 0;
+            display: flex;
+            align-items: center;
+            opacity: 0;
+            transition: 1s;
+            display: none;
+
+            ul {
+                height: 80%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                list-style: none;
+
+                li {
+                    a {
+                        font-size: 22px;
+                        color: #000;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            &.expanded {
+                display: flex;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+header.header-scrolled {
+    background: #fff;
+    box-shadow: 0px 0px 5px #ccc;
+}

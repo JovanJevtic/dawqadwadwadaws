@@ -1,4 +1,170 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lobster&family=Tajawal:wght@400;500&display=swap");
+header {
+  height: 80px;
+  width: 100%;
+}
+
+header nav {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav .logo-wrapp {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+header nav .logo-wrapp .logo {
+  font-size: 38px;
+  font-family: 'Dancing Script', cursive;
+  color: #fff;
+}
+
+header nav .menu-wrapp {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .menu-wrapp .hamburger {
+  height: 22px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  cursor: pointer;
+  z-index: 50;
+}
+
+header nav .menu-wrapp .hamburger .line {
+  height: 1px;
+  width: 30px;
+  background: #fff;
+}
+
+header nav .menu-wrapp .hamburger .hamburger-active {
+  background: red;
+  opacity: 1;
+  position: fixed;
+}
+
+header nav .menu-wrapp .hamburger .hamburger-active .line:nth-child(1) {
+  -webkit-transform: rotate(55deg) translateY(15px);
+          transform: rotate(55deg) translateY(15px);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  background: #000;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  width: 30px;
+  opacity: 1;
+}
+
+header nav .menu-wrapp .hamburger .hamburger-active .line:nth-child(2) {
+  opacity: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  background: #000;
+}
+
+header nav .menu-wrapp .hamburger .hamburger-active .line:nth-child(3) {
+  -webkit-transform: rotate(-55deg) translateY(-15px);
+          transform: rotate(-55deg) translateY(-15px);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  background: #000;
+  width: 30px;
+  opacity: 1;
+}
+
+header nav .header-expanded {
+  z-index: 5;
+  position: fixed;
+  background: #f9f9f9;
+  height: 100%;
+  width: 100%;
+  z-index: 50;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  display: none;
+}
+
+header nav .header-expanded ul {
+  height: 80%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+header nav .header-expanded ul li a {
+  font-size: 22px;
+  color: #000;
+  font-weight: bold;
+}
+
+header nav .header-expanded.expanded {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+}
+
+header.header-scrolled {
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 5px #ccc;
+          box-shadow: 0px 0px 5px #ccc;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +188,10 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  background: #333;
+}
+
 h1 {
   font-family: 'Lobster', cursive;
 }
@@ -34,10 +204,5 @@ a {
 .container {
   max-width: 340px;
   margin: auto;
-}
-
-.landing {
-  height: 100vh;
-  background: #c39d63;
 }
 /*# sourceMappingURL=style.css.map */
