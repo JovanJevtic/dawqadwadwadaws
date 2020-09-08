@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lobster&family=Tajawal:wght@400;500&display=swap');
+
+$gold: #c39d63;
+$grey: #f9f9f9;
+$darkGrey: #f0f0f0;
+
+//! No need $red: #ff4753;
+
+
+//* Font: font-family: 'Lobster', cursive;
+//* Special Font: font-family: 'Dancing Script', cursive;
+
+* {
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}   
+
+::selection {
+    background: $gold;
+    color: #f0f0f0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container {
+    max-width: 340px;
+    margin: auto;
+}
+
+.landing {
+    height: 100vh;
+    background: $gold;
+}

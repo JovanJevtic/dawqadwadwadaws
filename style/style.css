@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lobster&family=Tajawal:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Tajawal', sans-serif;
+}
+
+::-moz-selection {
+  background: #c39d63;
+  color: #f0f0f0;
+}
+
+::selection {
+  background: #c39d63;
+  color: #f0f0f0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  max-width: 340px;
+  margin: auto;
+}
+
+.landing {
+  height: 100vh;
+  background: #c39d63;
+}
+/*# sourceMappingURL=style.css.map */
