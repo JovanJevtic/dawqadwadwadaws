@@ -259,6 +259,7 @@ header.header-scrolled {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
 }
 
 #landing #landing-bg #landing-bg-darker {
@@ -298,7 +299,7 @@ header.header-scrolled {
   font-size: 38px;
   color: #c39d63;
   font-family: 'Dancing Script', cursive;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
 #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content .landing-p {
@@ -311,6 +312,12 @@ header.header-scrolled {
   font-size: 52px;
   text-align: center;
   margin-top: 30px;
+}
+
+#offer {
+  height: 1000px;
+  width: 100%;
+  background: #f9f9f9;
 }
 
 * {
