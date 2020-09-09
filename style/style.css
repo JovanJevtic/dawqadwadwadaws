@@ -218,6 +218,74 @@ header.header-scrolled {
           box-shadow: 0px 0px 5px #ccc;
 }
 
+#landing {
+  height: 100vh;
+  min-height: 700px;
+  max-height: 900px;
+  width: 100%;
+}
+
+#landing #landing-bg {
+  height: 100%;
+  width: 100%;
+  background: url("../assets/Hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#landing #landing-bg #landing-bg-darker {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#landing #landing-bg #landing-bg-darker #landing-wrapp {
+  height: 100%;
+  width: 100%;
+}
+
+#landing #landing-bg #landing-bg-darker #landing-wrapp .header-gap {
+  height: 100px;
+}
+
+#landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content {
+  width: 100%;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content .subheading {
+  font-size: 38px;
+  color: #c39d63;
+  font-family: 'Dancing Script', cursive;
+  margin-top: 170px;
+}
+
+#landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content .landing-p {
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+#landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content .heading {
+  text-transform: capitalize;
+  font-size: 52px;
+  text-align: center;
+  margin-top: 30px;
+}
+
 * {
   margin: 0;
   padding: 0;
