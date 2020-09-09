@@ -2,6 +2,8 @@
 header {
   height: 80px;
   width: 100%;
+  position: fixed;
+  z-index: 5000;
 }
 
 header nav {
@@ -68,53 +70,55 @@ header nav .menu-wrapp .hamburger {
 }
 
 header nav .menu-wrapp .hamburger .line {
-  height: 1px;
+  height: 2px;
   width: 30px;
-  background: #fff;
+  background: #f0f0f0;
 }
 
-header nav .menu-wrapp .hamburger .hamburger-active {
-  background: red;
-  opacity: 1;
-  position: fixed;
+header nav .menu-wrapp .hamburger .line:nth-child(1) {
+  width: 35px;
 }
 
-header nav .menu-wrapp .hamburger .hamburger-active .line:nth-child(1) {
-  -webkit-transform: rotate(55deg) translateY(15px);
-          transform: rotate(55deg) translateY(15px);
+header nav .menu-wrapp .hamburger .line:nth-child(2) {
+  width: 25px;
+}
+
+header nav .menu-wrapp .hamburger .line:nth-child(3) {
+  width: 15px;
+}
+
+header nav .menu-wrapp .hamburger.hamburger-active .line:nth-child(1) {
+  -webkit-transform: rotate(49deg) translateY(15px);
+          transform: rotate(49deg) translateY(15px);
   -webkit-transition: 0.6s;
   transition: 0.6s;
-  background: #000;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
   width: 30px;
   opacity: 1;
 }
 
-header nav .menu-wrapp .hamburger .hamburger-active .line:nth-child(2) {
+header nav .menu-wrapp .hamburger.hamburger-active .line:nth-child(2) {
   opacity: 0;
   -webkit-transition: 0.6s;
   transition: 0.6s;
-  background: #000;
 }
 
-header nav .menu-wrapp .hamburger .hamburger-active .line:nth-child(3) {
-  -webkit-transform: rotate(-55deg) translateY(-15px);
-          transform: rotate(-55deg) translateY(-15px);
+header nav .menu-wrapp .hamburger.hamburger-active .line:nth-child(3) {
+  -webkit-transform: rotate(-49deg) translateY(-15px);
+          transform: rotate(-49deg) translateY(-15px);
   -webkit-transition: 0.6s;
   transition: 0.6s;
-  background: #000;
   width: 30px;
   opacity: 1;
 }
 
 header nav .header-expanded {
-  z-index: 5;
   position: fixed;
   background: #f9f9f9;
+  background: #c39d63;
   height: 100%;
   width: 100%;
-  z-index: 50;
   left: 0;
   display: -webkit-box;
   display: -ms-flexbox;

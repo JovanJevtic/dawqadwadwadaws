@@ -1,6 +1,8 @@
 header {
     height: 80px;
     width: 100%;
+    position: fixed;
+    z-index: 5000;
 
     nav {
         height: 100%;
@@ -36,20 +38,29 @@ header {
                 z-index: 50;
 
                 .line {
-                    height: 1px;
+                    height: 2px;
                     width: 30px;
-                    background: #fff;
+                    background: $darkGrey;
                 }
 
-                .hamburger-active {
-                    background: red;
-                    opacity: 1;
-                    position: fixed;
+                .line:nth-child(1) {
+                    width: 35px;
+                }
+
+                .line:nth-child(2) {
+                    width: 25px;
+                }
+
+                .line:nth-child(3) {
+                    width: 15px;
+                }
+
+                &.hamburger-active {
+                   
 
                     .line:nth-child(1) {
-                        transform: rotate(55deg) translateY(15px);
+                        transform: rotate(49deg) translateY(15px);
                         transition: 0.6s;
-                        background: #000;
                         transform-origin: bottom;
                         width: 30px;
                         opacity: 1;
@@ -58,13 +69,11 @@ header {
                     .line:nth-child(2) {
                         opacity: 0;
                         transition: 0.6s;
-                        background: #000;
                     }
     
                     .line:nth-child(3) {
-                        transform: rotate(-55deg) translateY(-15px);
+                        transform: rotate(-49deg) translateY(-15px);
                         transition: 0.6s;
-                        background: #000;
                         width: 30px;
                         opacity: 1;
                     }
@@ -73,12 +82,11 @@ header {
         }
 
         .header-expanded {
-            z-index: 5;
             position: fixed;
             background: $grey;
+            background: $gold;
             height: 100%;
             width: 100%;
-            z-index: 50;
             left: 0;
             display: flex;
             align-items: center;
@@ -99,6 +107,7 @@ header {
                     a {
                         font-size: 22px;
                         color: #000;
+                        //color: #fff;
                         font-weight: bold;
                     }
                 }
@@ -106,7 +115,7 @@ header {
 
             &.expanded {
                 display: flex;
-                opacity: 1;
+                opacity: 1; 
             }
         }
     }
@@ -116,3 +125,4 @@ header.header-scrolled {
     background: #fff;
     box-shadow: 0px 0px 5px #ccc;
 }
+
