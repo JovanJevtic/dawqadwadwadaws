@@ -1,0 +1,27 @@
+@keyframes hamburgerLineOne {
+    from {
+    }
+
+    30% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: rotate(-40deg);
+        position: absolute;
+    }
+}
+
+@keyframes hamburgerLineTwo {
+    from {
+    }
+
+    30% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: rotate(40deg);
+        position: absolute;
+    }
+}

@@ -1,4 +1,5 @@
 @import './config';
+@import './animations';
 @import './header';
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lobster&family=Tajawal:wght@400;500&display=swap');
@@ -8,7 +9,8 @@
     margin: 0;  
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Tajawal', sans-serif;
+    //font-family: 'Tajawal', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }   
 
 ::selection {

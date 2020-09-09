@@ -39,43 +39,47 @@ header {
 
                 .line {
                     height: 2px;
-                    width: 30px;
+                    width: 26px;
                     background: $darkGrey;
                 }
 
-                .line:nth-child(1) {
-                    width: 35px;
-                }
+                // .line:nth-child(1) {
+                //     width: 35px;
+                // }
 
-                .line:nth-child(2) {
-                    width: 25px;
-                }
+                // .line:nth-child(2) {
+                //     width: 25px;
+                // }
 
-                .line:nth-child(3) {
-                    width: 15px;
-                }
+                // .line:nth-child(3) {
+                //     width: 15px;
+                // }
 
                 &.hamburger-active {
                    
 
                     .line:nth-child(1) {
-                        transform: rotate(49deg) translateY(15px);
-                        transition: 0.6s;
+                        animation: hamburgerLineOne 0.8s;
+                        animation-fill-mode: forwards;
                         transform-origin: bottom;
                         width: 30px;
                         opacity: 1;
+                        background-color: #000;
                     }
     
                     .line:nth-child(2) {
                         opacity: 0;
                         transition: 0.6s;
+                        background-color: #000;
                     }
     
                     .line:nth-child(3) {
-                        transform: rotate(-49deg) translateY(-15px);
-                        transition: 0.6s;
+                        animation: hamburgerLineTwo 0.9s;
+                        animation-fill-mode: forwards;
+                        transform-origin: top;
                         width: 30px;
                         opacity: 1;
+                        background-color: #000;
                     }
                 }  
             }
@@ -83,8 +87,9 @@ header {
 
         .header-expanded {
             position: fixed;
-            background: $grey;
-            background: $gold;
+            //background: $darkGrey;
+            //background: $gold;
+            background: #fff;
             height: 100%;
             width: 100%;
             left: 0;
@@ -109,6 +114,7 @@ header {
                         color: #000;
                         //color: #fff;
                         font-weight: bold;
+                        font-family: 'Lobster', cursive;
                     }
                 }
             }

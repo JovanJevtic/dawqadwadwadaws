@@ -1,4 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lobster&family=Tajawal:wght@400;500&display=swap");
+@-webkit-keyframes hamburgerLineOne {
+  from {
+  }
+  30% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+    position: absolute;
+  }
+}
+@keyframes hamburgerLineOne {
+  from {
+  }
+  30% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+    position: absolute;
+  }
+}
+
+@-webkit-keyframes hamburgerLineTwo {
+  from {
+  }
+  30% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+    position: absolute;
+  }
+}
+
+@keyframes hamburgerLineTwo {
+  from {
+  }
+  30% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+    position: absolute;
+  }
+}
+
 header {
   height: 80px;
   width: 100%;
@@ -71,52 +127,44 @@ header nav .menu-wrapp .hamburger {
 
 header nav .menu-wrapp .hamburger .line {
   height: 2px;
-  width: 30px;
+  width: 26px;
   background: #f0f0f0;
 }
 
-header nav .menu-wrapp .hamburger .line:nth-child(1) {
-  width: 35px;
-}
-
-header nav .menu-wrapp .hamburger .line:nth-child(2) {
-  width: 25px;
-}
-
-header nav .menu-wrapp .hamburger .line:nth-child(3) {
-  width: 15px;
-}
-
 header nav .menu-wrapp .hamburger.hamburger-active .line:nth-child(1) {
-  -webkit-transform: rotate(49deg) translateY(15px);
-          transform: rotate(49deg) translateY(15px);
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-animation: hamburgerLineOne 0.8s;
+          animation: hamburgerLineOne 0.8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
   width: 30px;
   opacity: 1;
+  background-color: #000;
 }
 
 header nav .menu-wrapp .hamburger.hamburger-active .line:nth-child(2) {
   opacity: 0;
   -webkit-transition: 0.6s;
   transition: 0.6s;
+  background-color: #000;
 }
 
 header nav .menu-wrapp .hamburger.hamburger-active .line:nth-child(3) {
-  -webkit-transform: rotate(-49deg) translateY(-15px);
-          transform: rotate(-49deg) translateY(-15px);
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-animation: hamburgerLineTwo 0.9s;
+          animation: hamburgerLineTwo 0.9s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transform-origin: top;
+          transform-origin: top;
   width: 30px;
   opacity: 1;
+  background-color: #000;
 }
 
 header nav .header-expanded {
   position: fixed;
-  background: #f9f9f9;
-  background: #c39d63;
+  background: #fff;
   height: 100%;
   width: 100%;
   left: 0;
@@ -154,6 +202,7 @@ header nav .header-expanded ul li a {
   font-size: 22px;
   color: #000;
   font-weight: bold;
+  font-family: 'Lobster', cursive;
 }
 
 header nav .header-expanded.expanded {
@@ -174,7 +223,7 @@ header.header-scrolled {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Tajawal', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 ::-moz-selection {
