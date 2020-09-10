@@ -25,3 +25,13 @@
         position: absolute;
     }
 }
+
+@keyframes svgDotAnimation {
+    from {
+
+    }
+
+    to {
+        transform: translateY(22px);
+    }
+}

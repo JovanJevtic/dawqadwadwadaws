@@ -55,6 +55,24 @@
   }
 }
 
+@-webkit-keyframes svgDotAnimation {
+  from {
+  }
+  to {
+    -webkit-transform: translateY(22px);
+            transform: translateY(22px);
+  }
+}
+
+@keyframes svgDotAnimation {
+  from {
+  }
+  to {
+    -webkit-transform: translateY(22px);
+            transform: translateY(22px);
+  }
+}
+
 header {
   height: 80px;
   width: 100%;
@@ -323,6 +341,17 @@ header.header-scrolled nav .menu-wrapp .hamburger .line {
   font-size: 52px;
   text-align: center;
   margin-top: 30px;
+}
+
+#landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content #scroll-svg {
+  max-height: 100px;
+  position: absolute;
+  bottom: 30px;
+}
+
+#landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content #scroll-svg #scroll-svg-dot {
+  -webkit-animation: svgDotAnimation 2s ease-in-out infinite;
+          animation: svgDotAnimation 2s ease-in-out infinite;
 }
 
 #offer {
