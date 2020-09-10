@@ -88,6 +88,7 @@ header nav .logo-wrapp .logo {
   font-size: 38px;
   font-family: 'Dancing Script', cursive;
   color: #fff;
+  font-weight: bold;
 }
 
 header nav .menu-wrapp {
@@ -161,8 +162,9 @@ header nav .menu-wrapp .hamburger.hamburger-active .line:nth-child(3) {
 
 header nav .header-expanded {
   position: fixed;
-  background: #333;
-  height: 400px;
+  background: #f0f0f0;
+  background: #fff;
+  height: 300px;
   width: 100%;
   left: 0;
   display: -webkit-box;
@@ -175,13 +177,15 @@ header nav .header-expanded {
   -webkit-transition: 1s;
   transition: 1s;
   display: none;
-  top: 100px;
+  top: 80px;
   -webkit-transform: translateY(-500px);
           transform: translateY(-500px);
   -webkit-transition: 1s -webkit-transform;
   transition: 1s -webkit-transform;
   transition: 1s transform;
   transition: 1s transform, 1s -webkit-transform;
+  -webkit-box-shadow: 0 0px 5px -5px #ccc;
+          box-shadow: 0 0px 5px -5px #ccc;
 }
 
 header nav .header-expanded ul {
@@ -207,27 +211,26 @@ header nav .header-expanded ul li {
       -ms-flex: 1;
           flex: 1;
   width: 100%;
-  border-top: 1px solid #646262;
+  border-top: 1px solid #f9f9f9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 header nav .header-expanded ul li a {
-  font-size: 18px;
+  font-size: 16px;
   color: #000;
-  color: #fff;
   font-weight: bold;
 }
 
 header nav .header-expanded ul li:nth-child(5) {
-  border-bottom: 1px solid #646262;
+  border-bottom: 1px solid #f9f9f9;
 }
 
 header nav .header-expanded.expanded {
