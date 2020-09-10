@@ -39,20 +39,14 @@ const header = () => {
     //* Header change style on scroll
 
     const scrolledHeader = () => {
+        let scroll = document.documentElement.scrollTop
         const header = document.querySelector('header')
-        let screenPosition = window.scrollTop
-
-        const headerPosition = header.getBoundingClientRect().bottom
-
-        if (headerPosition < 81) {
+        
+        if (scroll > 30) {
             header.classList.add('header-scrolled')
-            console.log(screenPosition)
-        } 
-
-        // if (headerPosition > screenPosition) {
-        //     header.classList.remove('header-scrolled')
-        //     console.log('rimuv')
-        // } 
+        }   else {
+            header.classList.remove('header-scrolled')
+        }
     }
 
     window.addEventListener('scroll', scrolledHeader)
