@@ -36,8 +36,8 @@ const header = () => {
         hamburger.classList.toggle('hamburger-active')
     })  
 
-    //* Header change style on scroll
 
+    //* Header change style on scroll
     const scrolledHeader = () => {
         let scroll = document.documentElement.scrollTop
         const header = document.querySelector('header')
@@ -51,6 +51,7 @@ const header = () => {
 
     window.addEventListener('scroll', scrolledHeader)
 
+    
     //* Hide header on scroll down and show on scroll up
 
 }

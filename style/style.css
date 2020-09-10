@@ -3,55 +3,35 @@
 @-webkit-keyframes hamburgerLineOne {
   from {
   }
-  30% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
-  100% {
-    -webkit-transform: rotate(-40deg);
-            transform: rotate(-40deg);
-    position: absolute;
+  to {
+    -webkit-transform: rotate(55deg) translateY(15px);
+            transform: rotate(55deg) translateY(15px);
   }
 }
 @keyframes hamburgerLineOne {
   from {
   }
-  30% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
-  100% {
-    -webkit-transform: rotate(-40deg);
-            transform: rotate(-40deg);
-    position: absolute;
+  to {
+    -webkit-transform: rotate(55deg) translateY(15px);
+            transform: rotate(55deg) translateY(15px);
   }
 }
 
 @-webkit-keyframes hamburgerLineTwo {
   from {
   }
-  30% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }
-  100% {
-    -webkit-transform: rotate(40deg);
-            transform: rotate(40deg);
-    position: absolute;
+  to {
+    -webkit-transform: rotate(50deg);
+            transform: rotate(50deg);
   }
 }
 
 @keyframes hamburgerLineTwo {
   from {
   }
-  30% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }
-  100% {
-    -webkit-transform: rotate(40deg);
-            transform: rotate(40deg);
-    position: absolute;
+  to {
+    -webkit-transform: rotate(50deg);
+            transform: rotate(50deg);
   }
 }
 
@@ -59,8 +39,8 @@
   from {
   }
   to {
-    -webkit-transform: translateY(22px);
-            transform: translateY(22px);
+    -webkit-transform: rotate(-55deg) translateY(-15px);
+            transform: rotate(-55deg) translateY(-15px);
   }
 }
 
@@ -68,8 +48,8 @@
   from {
   }
   to {
-    -webkit-transform: translateY(22px);
-            transform: translateY(22px);
+    -webkit-transform: rotate(-55deg) translateY(-15px);
+            transform: rotate(-55deg) translateY(-15px);
   }
 }
 
@@ -151,10 +131,10 @@ header nav .menu-wrapp .hamburger .line {
 }
 
 header nav .menu-wrapp .hamburger.hamburger-active .line:nth-child(1) {
-  -webkit-animation: hamburgerLineOne 0.8s;
-          animation: hamburgerLineOne 0.8s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-transform: rotate(50deg) translateY(15px);
+          transform: rotate(50deg) translateY(15px);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
   width: 30px;
@@ -168,10 +148,10 @@ header nav .menu-wrapp .hamburger.hamburger-active .line:nth-child(2) {
 }
 
 header nav .menu-wrapp .hamburger.hamburger-active .line:nth-child(3) {
-  -webkit-animation: hamburgerLineTwo 0.9s;
-          animation: hamburgerLineTwo 0.9s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-transform: rotate(-50deg) translateY(-15px);
+          transform: rotate(-50deg) translateY(-15px);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
   -webkit-transform-origin: top;
           transform-origin: top;
   width: 30px;
@@ -328,7 +308,7 @@ header.header-scrolled nav .menu-wrapp .hamburger .line {
   font-size: 38px;
   color: #c39d63;
   font-family: 'Dancing Script', cursive;
-  margin-top: 120px;
+  margin-top: 100px;
 }
 
 #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content .landing-p {
