@@ -1,7 +1,7 @@
 #offer {
-    height: 1000px;
+    height: 1700px;
     width: 100%;
-    background: #fff;
+    background: $grey;
 
     #offer-heading-wrapp {
         height: 200px;
@@ -57,7 +57,7 @@
                         }
 
                         .offer-subheading-line {
-                            height: 2px;
+                            height: 1px;
                             width: 70%;
                             background: #e5e5e5;
                             margin-top: 25px;
@@ -69,7 +69,93 @@
     }
 
     #offer-content-wrapp {
-        height: 800px;
+        height: 1500px;
         width: 100%;
+
+        #offer-content-bgs {
+            height: 100%;
+            width: 100%;
+            
+            #offer-content-bg-one {
+                height: 500px;
+                width: 100%;
+                background: $grey;
+            }
+
+            #offer-content-bg-two {
+                height: 1000px;
+                width: 100%;
+                background: $darkGrey;
+
+                p {
+                    color: $grey;
+                    font-size: 220px;
+                    font-family: 'Dancing Script', cursive;
+                    position: absolute;
+                    margin-top: -80px;
+                    z-index: 1;
+                    display: none;
+                }
+            }
+        }
+
+        #offer-content {
+            margin-top: -1500px;
+            height: 1500px;
+            width: 100%;
+
+            #offer-content-container {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .offer-card {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .offer-card-wrapp {
+                    height: 80%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    .offer-card-img-wrapp {
+                        flex: 2;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+
+                        .offer-card-img-container {
+                            height: 220px;
+                            width: 220px;
+                            border-radius: 50%;
+                            
+                            img {
+                                height: 100%;
+                                width: 100%;
+                                border-radius: 50%;
+                                z-index: 50;
+                            }
+                        }
+                    }
+
+                    .offer-card-txt-wrapp {
+                        flex: 1;
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        flex-direction: column;
+
+                        .offer-card-heading {
+                            font-family: 'Dancing Script', cursive;
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
