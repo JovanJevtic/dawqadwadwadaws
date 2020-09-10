@@ -3,35 +3,55 @@
 @-webkit-keyframes hamburgerLineOne {
   from {
   }
-  to {
-    -webkit-transform: rotate(55deg) translateY(15px);
-            transform: rotate(55deg) translateY(15px);
+  30% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+    position: absolute;
   }
 }
 @keyframes hamburgerLineOne {
   from {
   }
-  to {
-    -webkit-transform: rotate(55deg) translateY(15px);
-            transform: rotate(55deg) translateY(15px);
+  30% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+    position: absolute;
   }
 }
 
 @-webkit-keyframes hamburgerLineTwo {
   from {
   }
-  to {
-    -webkit-transform: rotate(50deg);
-            transform: rotate(50deg);
+  30% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+    position: absolute;
   }
 }
 
 @keyframes hamburgerLineTwo {
   from {
   }
-  to {
-    -webkit-transform: rotate(50deg);
-            transform: rotate(50deg);
+  30% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+    position: absolute;
   }
 }
 
@@ -39,8 +59,8 @@
   from {
   }
   to {
-    -webkit-transform: rotate(-55deg) translateY(-15px);
-            transform: rotate(-55deg) translateY(-15px);
+    -webkit-transform: translateY(22px);
+            transform: translateY(22px);
   }
 }
 
@@ -48,8 +68,8 @@
   from {
   }
   to {
-    -webkit-transform: rotate(-55deg) translateY(-15px);
-            transform: rotate(-55deg) translateY(-15px);
+    -webkit-transform: translateY(22px);
+            transform: translateY(22px);
   }
 }
 

@@ -2,8 +2,13 @@
     from {
     }
 
-    to {
-        transform: rotate(55deg) translateY(15px);
+    30% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: rotate(-40deg);
+        position: absolute;
     }
 }
 
@@ -11,8 +16,13 @@
     from {
     }
 
-    to {
-        transform: rotate(50deg);
+    30% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: rotate(40deg);
+        position: absolute;
     }
 }
 
@@ -22,6 +32,6 @@
     }
 
     to {
-        transform: rotate(-55deg) translateY(-15px);
+        transform: translateY(22px);
     }
 }
