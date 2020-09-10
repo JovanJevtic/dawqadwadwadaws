@@ -202,8 +202,8 @@ header nav .header-expanded {
   transition: 1s -webkit-transform;
   transition: 1s transform;
   transition: 1s transform, 1s -webkit-transform;
-  -webkit-box-shadow: 0 0px 5px -5px #ccc;
-          box-shadow: 0 0px 5px -5px #ccc;
+  -webkit-box-shadow: 0 0px 5px -2px #ccc;
+          box-shadow: 0 0px 5px -2px #ccc;
 }
 
 header nav .header-expanded ul {
@@ -325,7 +325,7 @@ header.header-scrolled nav .menu-wrapp .hamburger .line {
 }
 
 #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content .subheading {
-  font-size: 38px;
+  font-size: 34px;
   color: #c39d63;
   font-family: 'Dancing Script', cursive;
   margin-top: 100px;
@@ -333,14 +333,14 @@ header.header-scrolled nav .menu-wrapp .hamburger .line {
 
 #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content .landing-p {
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 14px;
 }
 
 #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content .heading {
   text-transform: capitalize;
   font-size: 52px;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content #scroll-svg {
@@ -357,7 +357,108 @@ header.header-scrolled nav .menu-wrapp .hamburger .line {
 #offer {
   height: 1000px;
   width: 100%;
-  background: #f9f9f9;
+  background: #fff;
+}
+
+#offer #offer-heading-wrapp {
+  height: 200px;
+  width: 100%;
+}
+
+#offer #offer-heading-wrapp #offer-heading-content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#offer #offer-heading-wrapp #offer-heading-content #offer-heading-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#offer #offer-heading-wrapp #offer-heading-content #offer-heading-container #offer-heading {
+  text-transform: capitalize;
+  font-size: 38px;
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+  color: #3e3e3e;
+}
+
+#offer #offer-heading-wrapp #offer-heading-content #offer-subheading-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#offer #offer-heading-wrapp #offer-heading-content #offer-subheading-container .offer-subheading-block-wrapp {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#offer #offer-heading-wrapp #offer-heading-content #offer-subheading-container .offer-subheading-block-wrapp.offer-subheading-block-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#offer #offer-heading-wrapp #offer-heading-content #offer-subheading-container .offer-subheading-block-wrapp.offer-subheading-block-container #offer-subheading {
+  margin-top: 15px;
+  color: #bababa;
+}
+
+#offer #offer-heading-wrapp #offer-heading-content #offer-subheading-container .offer-subheading-block-wrapp.offer-subheading-line-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#offer #offer-heading-wrapp #offer-heading-content #offer-subheading-container .offer-subheading-block-wrapp.offer-subheading-line-block:nth-child(1) {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#offer #offer-heading-wrapp #offer-heading-content #offer-subheading-container .offer-subheading-block-wrapp.offer-subheading-line-block:nth-child(2) {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#offer #offer-heading-wrapp #offer-heading-content #offer-subheading-container .offer-subheading-block-wrapp.offer-subheading-line-block .offer-subheading-line {
+  height: 2px;
+  width: 70%;
+  background: #e5e5e5;
+  margin-top: 25px;
+}
+
+#offer #offer-content-wrapp {
+  height: 800px;
+  width: 100%;
 }
 
 * {

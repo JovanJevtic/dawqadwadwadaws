@@ -1,5 +1,75 @@
 #offer {
     height: 1000px;
     width: 100%;
-    background: $grey;
+    background: #fff;
+
+    #offer-heading-wrapp {
+        height: 200px;
+        width: 100%;
+
+        #offer-heading-content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        
+            #offer-heading-container {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+
+                #offer-heading {
+                    text-transform: capitalize;
+                    font-size: 38px;
+                    font-weight: bold;
+                    font-family: 'Dancing Script', cursive;
+                    color: #3e3e3e;
+                }
+            }
+
+            #offer-subheading-container {
+                flex: 1;
+                display: flex;
+
+                .offer-subheading-block-wrapp {
+                    flex: 1;
+                
+                    &.offer-subheading-block-container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+
+                        #offer-subheading {
+                            margin-top: 15px;
+                            color: #bababa;
+                        }
+                    }
+
+                    &.offer-subheading-line-block {
+                        display: flex;
+
+                        &:nth-child(1) {
+                            justify-content: flex-end;
+                        }
+
+                        &:nth-child(2) {
+                            justify-content: flex-start;
+                        }
+
+                        .offer-subheading-line {
+                            height: 2px;
+                            width: 70%;
+                            background: #e5e5e5;
+                            margin-top: 25px;
+                        }
+                    }
+                }
+            }  
+        }
+    }
+
+    #offer-content-wrapp {
+        height: 800px;
+        width: 100%;
+    }
 }
