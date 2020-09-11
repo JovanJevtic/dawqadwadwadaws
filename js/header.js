@@ -4,11 +4,12 @@ const header = () => {
     const hamburger = document.querySelector('.hamburger')
     const nav = document.querySelector('.header-expanded')
     const links = document.querySelectorAll('.mobile-nav-link a')
+    const header = document.querySelector('header')
 
     hamburger.addEventListener('click', () => {
         nav.classList.toggle('expanded')
         hamburger.classList.toggle('hamburger-active')
-        console.log(hamburger.classList)
+        header.classList.remove('hide')
     })
 
     links[0].addEventListener('click', () => {
