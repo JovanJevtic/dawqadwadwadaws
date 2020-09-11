@@ -74,10 +74,13 @@
 }
 
 header {
+  top: 0;
   height: 80px;
   width: 100%;
   position: fixed;
   z-index: 5000;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 header nav {
@@ -272,6 +275,10 @@ header.header-scrolled nav .logo-wrapp .logo {
 
 header.header-scrolled nav .menu-wrapp .hamburger .line {
   background: #000;
+}
+
+header.hide {
+  top: -80px;
 }
 
 #landing {

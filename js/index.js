@@ -1,3 +1,4 @@
-import header from './header.js'
+import header, { headerScrolling } from './header.js'
 
 header()
+headerScrolling()

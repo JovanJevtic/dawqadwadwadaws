@@ -1,8 +1,10 @@
 header {
+    top: 0;
     height: 80px;
     width: 100%;
     position: fixed;
     z-index: 5000;
+    transition: all .3s ease;
 
     nav {
         height: 100%;
@@ -165,5 +167,9 @@ header.header-scrolled {
             }
         }
     }
+}
+
+header.hide {
+    top: -80px;
 }
 
