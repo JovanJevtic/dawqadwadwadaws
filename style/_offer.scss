@@ -1,10 +1,10 @@
 #offer {
-    height: 1700px;
+    height: 1650px;
     width: 100%;
     background: $grey;
 
     #offer-heading-wrapp {
-        height: 200px;
+        height: 150px;
         width: 100%;
 
         #offer-heading-content {
@@ -91,10 +91,10 @@
                     color: $grey;
                     font-size: 220px;
                     font-family: 'Dancing Script', cursive;
-                    position: absolute;
-                    margin-top: -80px;
+                    //position: static;
+                    bottom: 80px;
                     z-index: 1;
-                    display: none;
+                    //display: none;
                 }
             }
         }

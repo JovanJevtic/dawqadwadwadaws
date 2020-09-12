@@ -362,13 +362,13 @@ header.hide {
 }
 
 #offer {
-  height: 1700px;
+  height: 1650px;
   width: 100%;
   background: #f9f9f9;
 }
 
 #offer #offer-heading-wrapp {
-  height: 200px;
+  height: 150px;
   width: 100%;
 }
 
@@ -489,10 +489,8 @@ header.hide {
   color: #f9f9f9;
   font-size: 220px;
   font-family: 'Dancing Script', cursive;
-  position: absolute;
-  margin-top: -80px;
+  bottom: 80px;
   z-index: 1;
-  display: none;
 }
 
 #offer #offer-content-wrapp #offer-content {
@@ -724,7 +722,7 @@ header.hide {
 #about #about-txt-wrapp #about-txt-container .container .about-txt-block .about-txt .about-btn {
   height: 40px;
   width: 170px;
-  margin-top: 80px;
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
