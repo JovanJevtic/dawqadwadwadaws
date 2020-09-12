@@ -66,7 +66,7 @@
                 .about-txt-block {
                     flex: 1;
                     display: flex;
-                    align-items: flex-end;
+                    align-items: center;
 
                     .about-txt {
                         display: flex;
@@ -81,7 +81,7 @@
                         }
 
                         #about-txt-heading2 {
-                            margin-top: 70px;
+                            margin-top: 10px;
                         }
                     
                         p {
@@ -109,10 +109,6 @@
                             }
                         }
                     }
-                }
-
-                .about-txt-block:nth-child(2) {
-                    align-items: center;
                 }
             }
         }

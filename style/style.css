@@ -493,6 +493,15 @@ header.hide {
   z-index: 1;
 }
 
+#offer #offer-content-wrapp #offer-content-bgs #offer-content-bg-two i {
+  color: #f9f9f9;
+  font-size: 220px;
+  font-family: 'Dancing Script', cursive;
+  bottom: 80px;
+  z-index: 1;
+  margin-top: 100px;
+}
+
 #offer #offer-content-wrapp #offer-content {
   margin-top: -1500px;
   height: 1500px;
@@ -684,9 +693,9 @@ header.hide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #about #about-txt-wrapp #about-txt-container .container .about-txt-block .about-txt {
@@ -710,7 +719,7 @@ header.hide {
 }
 
 #about #about-txt-wrapp #about-txt-container .container .about-txt-block .about-txt #about-txt-heading2 {
-  margin-top: 70px;
+  margin-top: 10px;
 }
 
 #about #about-txt-wrapp #about-txt-container .container .about-txt-block .about-txt p {
@@ -741,12 +750,6 @@ header.hide {
   line-height: 40px;
   text-align: center;
   font-weight: bold;
-}
-
-#about #about-txt-wrapp #about-txt-container .container .about-txt-block:nth-child(2) {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 * {
