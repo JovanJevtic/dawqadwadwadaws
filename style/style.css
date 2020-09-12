@@ -766,6 +766,165 @@ header.hide {
   font-weight: bold;
 }
 
+#menu {
+  height: 2000px;
+  width: 100%;
+  background: #f9f9f9;
+}
+
+#menu #menu-wrapp {
+  height: 100%;
+  width: 100%;
+}
+
+#menu #menu-wrapp #menu-bg {
+  height: 600px;
+  width: 100%;
+  background: url("../assets/menu_img1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#menu #menu-wrapp #menu-bg .container {
+  height: 2000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#menu #menu-wrapp #menu-bg .container #menu-container {
+  height: 1700px;
+  width: 100%;
+  background: #fff;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 15px #ddd;
+          box-shadow: 0px 0px 15px #ddd;
+}
+
+#menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp {
+  height: 350px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-logo-wrapp {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-logo-wrapp img {
+  max-width: 200px;
+}
+
+#menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-heading-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-heading-container h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+#menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block:nth-child(1) {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block:nth-child(1) .menu-subheading-line {
+  height: 1px;
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+#menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block:nth-child(2) {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block:nth-child(3) {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block:nth-child(3) .menu-subheading-line {
+  height: 1px;
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
 * {
   margin: 0;
   padding: 0;

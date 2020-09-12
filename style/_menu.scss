@@ -1,0 +1,107 @@
+#menu {
+    height: 2000px;
+    width: 100%;
+    background: $grey                                                               ;
+
+    #menu-wrapp {
+        height: 100%;
+        width: 100%;
+
+        #menu-bg {
+            height: 600px;
+            width: 100%;
+            background: url('../assets/menu_img1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+
+            .container {
+                height: 2000px;
+                display: flex;
+                align-items: center;
+
+                #menu-container {
+                    height: 1700px;
+                    width: 100%;
+                    background: #fff;
+                    border-radius: 20px;
+                    box-shadow: 0px 0px 15px #ddd;
+
+                    #menu-heading-wrapp {
+                        height: 350px;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+
+                        #menu-heading-logo-wrapp {
+                            flex: 1;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            img {
+                                max-width: 200px;
+                            }
+                        }
+
+                        #menu-heading-heading-wrapp {
+                            flex: 1;
+                            display: flex;
+                            flex-direction: column;
+
+                            #menu-heading-container {
+                                flex: 1;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                h1 {
+                                    text-align: center;
+                                    font-size: 36px;
+                                    font-weight: 400;
+                                }
+                            }
+
+                            #menu-subheading-container {
+                                flex: 1;
+                                display: flex;
+
+                                .menu-subheading-block {
+                                    flex: 1;
+                                    display: flex;
+                                    align-items: center;
+
+                                    &:nth-child(1) {
+                                        justify-content: flex-end;
+
+                                        .menu-subheading-line {
+                                            height: 1px;
+                                            width: 70%;
+                                            background-color: rgba(0, 0, 0, 0.25);
+                                        }
+                                    } 
+
+                                    &:nth-child(2) {
+                                        text-align: center;
+                                        justify-content: center;
+                                        flex: 1;
+                                    }
+
+                                    &:nth-child(3) {
+                                        justify-content: flex-start;
+
+                                        .menu-subheading-line {
+                                            height: 1px;
+                                            width: 70%;
+                                            background-color: rgba(0, 0, 0, 0.25);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
