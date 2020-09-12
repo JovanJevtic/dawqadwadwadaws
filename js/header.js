@@ -69,18 +69,18 @@ export const headerScrolling = () => {
 
     const checkScroll = () => {
     
-        curScroll = w.scrollY || doc.scrollTop;
+        curScroll = w.scrollY || doc.scrollTop
         if (curScroll > prevScroll) { 
           //scrolled up
-          direction = 2;
+          direction = 2
         }
         else if (curScroll < prevScroll) { 
           //scrolled down
-          direction = 1;
+          direction = 1
         }
     
         if (direction !== prevDirection) {
-          toggleHeader(direction, curScroll);
+          toggleHeader(direction, curScroll)
         }
         
         prevScroll = curScroll;
@@ -90,17 +90,15 @@ export const headerScrolling = () => {
     const toggleHeader = (direction, curScroll) => {
         if (direction === 2 && curScroll > 80) { 
           
-          //replace 52 with the height of your header in px
-            
           header.classList.add('hide');
-          prevDirection = direction;
+          prevDirection = direction
         }
         else if (direction === 1) {
-          header.classList.remove('hide');
+          header.classList.remove('hide')
           prevDirection = direction;
         }
     }
 
-    window.addEventListener('scroll', checkScroll);
+    window.addEventListener('scroll', checkScroll)
     
 }
