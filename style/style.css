@@ -494,7 +494,7 @@ header.hide {
 #offer #offer-content-wrapp #offer-content-bgs #offer-content-bg-two p {
   color: #f9f9f9;
   font-size: 220px;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Lobster', cursive;
   bottom: 80px;
   z-index: 1;
 }
@@ -502,7 +502,7 @@ header.hide {
 #offer #offer-content-wrapp #offer-content-bgs #offer-content-bg-two i {
   color: #f9f9f9;
   font-size: 220px;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Lobster', cursive;
   bottom: 80px;
   z-index: 1;
   margin-top: 100px;
@@ -605,20 +605,26 @@ header.hide {
 }
 
 #about {
-  height: 1500px;
+  height: 1560px;
   width: 100%;
 }
 
 #about .about-img-wrapp {
-  height: 250px;
+  height: 280px;
   width: 100%;
-  background: #fff;
+  background: #f0f0f0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+#about .about-img-wrapp:nth-child(1) {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 #about .about-img-wrapp .about-img {
@@ -732,6 +738,8 @@ header.hide {
   font-size: 16px;
   margin-top: 50px;
   text-align: center;
+  line-height: 28px;
+  color: #626161;
 }
 
 #about #about-txt-wrapp #about-txt-container .container .about-txt-block .about-txt .about-btn {
