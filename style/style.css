@@ -997,6 +997,32 @@ header.hide {
       justify-content: space-around;
 }
 
+#menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn {
+  height: 50px;
+  width: 150px;
+  background: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #000;
+  font-weight: bold;
+  border: 2px solid #c39d63;
+  border-radius: 25px;
+}
+
+#menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn:hover, #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn:focus {
+  background: #c39d63;
+  color: #fff;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
 #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list .menu-list-item {
   height: 100px;
   width: 100%;
