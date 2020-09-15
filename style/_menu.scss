@@ -76,8 +76,8 @@
 
                                         .menu-subheading-line {
                                             height: 1px;
-                                            width: 70%;
-                                            background-color: rgba(0, 0, 0, 0.25);
+                                            width: 50%;
+                                            background-color: #e5e5e5;
                                         }
                                     } 
 
@@ -85,6 +85,7 @@
                                         text-align: center;
                                         justify-content: center;
                                         flex: 1;
+                                        color: #a6a6a6;
                                     }
 
                                     &:nth-child(3) {
@@ -92,12 +93,88 @@
 
                                         .menu-subheading-line {
                                             height: 1px;
-                                            width: 70%;
-                                            background-color: rgba(0, 0, 0, 0.25);
+                                            width: 50%;
+                                            background-color: #e5e5e5;
                                         }
                                     }
                                 }
                             }
+                        }
+                    }
+
+                    #menu-content-wrapp {
+                        height: 1350px;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        #menu-content {
+                            height: 1300px;
+                            width: 80%;
+                            display: flex;
+                            flex-direction: column;
+
+                           .menu-part {
+                               flex: 1;
+
+                               .menu-list-heading-wrapp {
+                                    height: 50px;
+                                    width: 100%;
+                                    display: flex;
+                                    //align-items: center;
+                                    justify-content: center;
+
+                                    p {
+                                        font-family: 'Dancing Script', cursive;
+                                        font-size: 32px;
+                                        font-weight: bold;
+                                        color: $gold;
+                                    }
+                                    
+                                    #menu-list-heading2 {
+                                        margin-top: 15px;
+                                    }
+                               }
+
+                               .menu-list {
+                                    height: 600px;
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: space-around;
+
+                                    .menu-list-item {
+                                        height: 100px;
+                                        width: 100%;
+                                        display: flex;
+                                        flex-direction: column;
+
+                                        .menu-list-item-heading-wrapp {
+                                            flex: 1;
+                                            display: flex;
+                                            align-items: flex-end;
+                                            border-bottom: 1px dotted #626161;
+
+                                            .menu-list-item-heading {
+                                                font-family: 'Lobster', cursive;
+                                                font-size: 24px;
+                                            }
+                                        }
+
+                                        .menu-list-item-txt-wrapp {
+                                            flex: 2;
+                                            display: flex;
+                                            align-items: flex-end;
+                                            text-align: start;
+                                            color: #626161;
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                        }
+                                    }
+                               }    
+                           }
                         }
                     }
                 }
