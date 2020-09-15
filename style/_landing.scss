@@ -1,7 +1,7 @@
 #landing {
     height: 100vh;
     min-height: 700px;
-    max-height: 900px;
+    max-height: 80px;
     width: 100%;
 
     #landing-bg {
@@ -54,9 +54,10 @@
                     }
 
                     #scroll-svg {
-                        max-height: 100px;
+                        max-height: 120px;
                         position: absolute;
-                        bottom: 30px;
+                        //bottom: 30px;
+                        margin-top: 300px;
 
                         #scroll-svg-dot {
                             animation: svgDotAnimation 2s ease-in-out infinite;
