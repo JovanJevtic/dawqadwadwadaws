@@ -1,0 +1,25 @@
+#info {
+    height: 1100px;
+    width: 100%;
+    background: #fff;
+
+    #info-wrapp {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        #info-contact-wrapp {
+            flex: 1.5;
+        }
+
+        #info-map-wrapp {
+            flex: 1;
+            
+            #map {
+                width: 100%;
+                height: 109%;
+            }
+        }
+    }
+}
