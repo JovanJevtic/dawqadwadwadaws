@@ -1300,6 +1300,32 @@ footer #footer-links .footer-container i {
   color: #fff;
 }
 
+#comments {
+  width: 100%;
+  background: #f9f9f9;
+}
+
+#comments #comments-heading-wrapp {
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#comments #comments-heading-wrapp h1 {
+  font-size: 32px;
+  -webkit-text-decoration: underline #c39d63;
+          text-decoration: underline #c39d63;
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+}
+
 * {
   margin: 0;
   padding: 0;
