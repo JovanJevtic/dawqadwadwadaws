@@ -68,3 +68,10 @@
         }
     }
 }
+
+@media screen and (min-width: 1026px) {
+    #landing {
+        height: 1080px;
+        min-height: 100vh;
+    }
+}

@@ -48,3 +48,24 @@ a {
     max-width: 340px;
     margin: auto;
 }
+
+@media screen and (min-width: 800px) {
+    .container {
+        max-width: 740px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1026px) {
+    .container {
+        max-width: 940px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .container {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
