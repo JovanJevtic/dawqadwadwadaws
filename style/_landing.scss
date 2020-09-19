@@ -1,66 +1,143 @@
-#landing {
-    height: 100vh;
-    min-height: 700px;
-    max-height: 800px;
-    width: 100%;
-
-    #landing-bg {
-        height: 100%;
+@media screen and (max-width: 799px) {
+    #landing {
+        height: 100vh;
+        min-height: 700px;
+        max-height: 800px;
         width: 100%;
-        background: url('../assets/Hero.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-
-        #landing-bg-darker {
+    
+        #landing-bg {
             height: 100%;
             width: 100%;
-            background: rgba(0, 0, 0, 0.6);
-        
-            #landing-wrapp {
+            background: url('../assets/Hero.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+    
+            #landing-bg-darker {
                 height: 100%;
                 width: 100%;
-                
-                .header-gap {
-                    height: 100px;
-                }
-
-                #landing-content {
+                background: rgba(0, 0, 0, 0.6);
+            
+                #landing-wrapp {
+                    height: 100%;
                     width: 100%;
-                    color: #fff;
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-                    align-items: center;
-                
-                    .subheading {
-                        font-size: 34px;
-                        color: $gold;
-                        font-family: 'Dancing Script', cursive;
-                        margin-top: 100px;
+                    
+                    .header-gap {
+                        height: 100px;
                     }
-
-                    .landing-p {
-                        text-transform: uppercase;
-                        margin-top: 14px;
+    
+                    #landing-content {
+                        width: 100%;
+                        color: #fff;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                    
+                        .subheading {
+                            font-size: 34px;
+                            color: $gold;
+                            font-family: 'Dancing Script', cursive;
+                            margin-top: 100px;
+                        }
+    
+                        .landing-p {
+                            text-transform: uppercase;
+                            margin-top: 14px;
+                        }
+    
+                        .heading {
+                            text-transform: capitalize;
+                            font-size: 52px;
+                            text-align: center;
+                            margin-top: 20px;
+                        }
+    
+                        #scroll-svg {
+                            max-height: 120px;
+                            position: absolute;
+                            //bottom: 30px;
+                            margin-top: 300px;
+    
+                            #scroll-svg-dot {
+                                animation: svgDotAnimation 2s ease-in-out infinite;
+                            }
+                        }
                     }
+                }
+            }
+        }
+    }
+}
 
-                    .heading {
-                        text-transform: capitalize;
-                        font-size: 52px;
-                        text-align: center;
-                        margin-top: 20px;
+
+@media screen and (min-width: 800px) {
+    #landing {
+        height: 100vh;
+        min-height: 700px;
+        max-height: 1920px;
+        width: 100%;
+    
+        #landing-bg {
+            height: 100%;
+            width: 100%;
+            background: url('../assets/Hero.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+    
+            #landing-bg-darker {
+                height: 100%;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.6);
+            
+                #landing-wrapp {
+                    height: 100%;
+                    width: 100%;
+                    
+                    .header-gap {
+                        height: 100px;
                     }
-
-                    #scroll-svg {
-                        max-height: 120px;
-                        position: absolute;
-                        //bottom: 30px;
-                        margin-top: 300px;
-
-                        #scroll-svg-dot {
-                            animation: svgDotAnimation 2s ease-in-out infinite;
+    
+                    #landing-content {
+                        width: 100%;
+                        color: #fff;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                    
+                        .subheading {
+                            font-size: 48px;
+                            color: $gold;
+                            font-family: 'Dancing Script', cursive;
+                            margin-top: 250px;
+                        }
+    
+                        .landing-p {
+                            text-transform: uppercase;
+                            margin-top: 24px;
+                            font-size: 14px;
+                        }
+    
+                        .heading {
+                            text-transform: capitalize;
+                            font-size: 72px;
+                            text-align: center;
+                            margin-top: 20px;
+                        }
+    
+                        #scroll-svg {
+                            max-height: 120px;
+                            position: absolute;
+                            bottom: 50px;
+                            //margin-top: 300px;
+    
+                            #scroll-svg-dot {
+                                animation: svgDotAnimation 2s ease-in-out infinite;
+                            }
                         }
                     }
                 }
@@ -71,7 +148,150 @@
 
 @media screen and (min-width: 1026px) {
     #landing {
-        height: 1080px;
-        min-height: 100vh;
+        height: 100vh;
+        min-height: 1200px;
+        max-height: 1920px;
+        width: 100%;
+    
+        #landing-bg {
+            height: 100%;
+            width: 100%;
+            background: url('../assets/Hero.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+    
+            #landing-bg-darker {
+                height: 100%;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.6);
+            
+                #landing-wrapp {
+                    height: 100%;
+                    width: 100%;
+                    
+                    .header-gap {
+                        height: 100px;
+                    }
+    
+                    #landing-content {
+                        width: 100%;
+                        color: #fff;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                    
+                        .subheading {
+                            font-size: 64px;
+                            color: $gold;
+                            font-family: 'Dancing Script', cursive;
+                            margin-top: 220px;
+                        }
+    
+                        .landing-p {
+                            text-transform: uppercase;
+                            margin-top: 24px;
+                            font-size: 17px;
+                        }
+    
+                        .heading {
+                            text-transform: capitalize;
+                            font-size: 92px;
+                            text-align: center;
+                            margin-top: 20px;
+                            max-width: 800px;
+                        }
+    
+                        #scroll-svg {
+                            max-height: 120px;
+                            position: absolute;
+                            bottom: 50px;
+                            //margin-top: 300px;
+    
+                            #scroll-svg-dot {
+                                animation: svgDotAnimation 2s ease-in-out infinite;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    #landing {
+        height: 100vh;
+        min-height: 1200px;
+        max-height: 1920px;
+        width: 100%;
+    
+        #landing-bg {
+            height: 100%;
+            width: 100%;
+            background: url('../assets/Hero.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+    
+            #landing-bg-darker {
+                height: 100%;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.6);
+            
+                #landing-wrapp {
+                    height: 100%;
+                    width: 100%;
+                    
+                    .header-gap {
+                        height: 100px;
+                    }
+    
+                    #landing-content {
+                        width: 100%;
+                        color: #fff;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                    
+                        .subheading {
+                            font-size: 64px;
+                            color: $gold;
+                            font-family: 'Dancing Script', cursive;
+                            margin-top: 220px;
+                        }
+    
+                        .landing-p {
+                            text-transform: uppercase;
+                            margin-top: 24px;
+                            font-size: 17px;
+                        }
+    
+                        .heading {
+                            text-transform: capitalize;
+                            font-size: 92px;
+                            text-align: center;
+                            margin-top: 20px;
+                            max-width: 800px;
+                        }
+    
+                        #scroll-svg {
+                            max-height: 120px;
+                            position: absolute;
+                            bottom: 50px;
+                            //margin-top: 300px;
+    
+                            #scroll-svg-dot {
+                                animation: svgDotAnimation 2s ease-in-out infinite;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
