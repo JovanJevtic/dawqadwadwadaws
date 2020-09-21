@@ -594,7 +594,7 @@ header.header-scrolled nav .header-expanded ul li a {
   #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content #scroll-svg {
     max-height: 120px;
     position: absolute;
-    bottom: 50px;
+    margin-top: 300px;
   }
   #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content #scroll-svg #scroll-svg-dot {
     -webkit-animation: svgDotAnimation 2s ease-in-out infinite;
@@ -667,8 +667,7 @@ header.header-scrolled nav .header-expanded ul li a {
   }
   #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content #scroll-svg {
     max-height: 120px;
-    position: absolute;
-    bottom: 50px;
+    margin-top: 300px;
   }
   #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content #scroll-svg #scroll-svg-dot {
     -webkit-animation: svgDotAnimation 2s ease-in-out infinite;

@@ -84,7 +84,6 @@ export const headerScrolling = () => {
         }
         
         prevScroll = curScroll;
-        console.log('radi')
     }
 
     const toggleHeader = (direction, curScroll) => {
