@@ -1,117 +1,119 @@
-#about {
-    height: 1560px;
-    width: 100%;
-    
-    .about-img-wrapp {
-        height: 280px;
-        width: 100%;
-        background:$darkGrey;
-        display: flex;
-        align-items: flex-start;
 
-        &:nth-child(1) {
-            align-items: flex-end;
-        }
+    #about {
+        height: 1560px;
+        width: 100%;
         
-        .about-img {
-            height: 220px;
+        .about-img-wrapp {
+            height: 280px;
             width: 100%;
-            box-shadow: 0px 15px 45px -9px rgba(0, 0, 0, 0.25);
-        
-            &#about-img1 {
-                background: url('../assets/about_img1.jpg');
-                background-size: cover;
-                background-position: center;
-                border-top-right-radius: 15px;
-                border-bottom-right-radius: 15px;
-            }
-
-            &#about-img2 {
-                background: url('../assets/about_img2.jpg');
-                background-size: cover;
-                background-position: center;
-                border-top-left-radius: 15px;
-                border-bottom-left-radius: 15px;
-            }
-        }
-    }
-
-    #about-txt-wrapp {
-        height: 1000px;
-        width: 100%;
-        background: #fff;
-        display: flex;
-        flex-direction: column;
-
-        .about-txt-container {
-            flex: 1;
+            background:$darkGrey;
             display: flex;
-            text-align: center;
-
-            em {
+            align-items: flex-start;
+    
+            &:nth-child(1) {
+                align-items: flex-end;
+            }
+            
+            .about-img {
+                height: 220px;
                 width: 100%;
-                text-align: center;
-                font-size: 240px;
-                color: $grey;
-                font-family: 'Lobster', cursive;
+                box-shadow: 0px 15px 45px -9px rgba(0, 0, 0, 0.25);
+            
+                &#about-img1 {
+                    background: url('../assets/about_img1.jpg');
+                    background-size: cover;
+                    background-position: center;
+                    border-top-right-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                }
+    
+                &#about-img2 {
+                    background: url('../assets/about_img2.jpg');
+                    background-size: cover;
+                    background-position: center;
+                    border-top-left-radius: 15px;
+                    border-bottom-left-radius: 15px;
+                }
             }
         }
-
-        #about-txt-container {
+    
+        #about-txt-wrapp {
             height: 1000px;
             width: 100%;
-            position: absolute;
-
-            .container {
-                height: 100%;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+    
+            .about-txt-container {
+                flex: 1;
                 display: flex;
-                flex-direction: column;
-
-                .about-txt-block {
-                    flex: 1;
+                text-align: center;
+    
+                em {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 240px;
+                    color: $grey;
+                    font-family: 'Lobster', cursive;
+                }
+            }
+    
+            #about-txt-container {
+                height: 1000px;
+                width: 100%;
+                position: absolute;
+    
+                .container {
+                    height: 100%;
                     display: flex;
-                    align-items: center;
-
-                    .about-txt {
+                    flex-direction: column;
+    
+                    .about-txt-block {
+                        flex: 1;
                         display: flex;
-                        flex-direction: column;
                         align-items: center;
-
-                        h1 {
-                            font-weight: 400;
-                            text-align: center;
-                            color: #3e3e3e;
-                            font-size: 32px;
-                        }
-
-                        #about-txt-heading2 {
-                            margin-top: 10px;
-                        }
-                    
-                        p {
-                            font-size: 16px;
-                            margin-top: 50px;
-                            text-align: center;
-                            line-height: 28px;
-                            //line-height: ;
-                            color: #626161;
-                        }
-
-                        .about-btn {
-                            height: 40px;
-                            width: 170px;
-                            margin-top: 50px;
+    
+                        .about-txt {
                             display: flex;
-                            justify-content: center;
+                            flex-direction: column;
                             align-items: center;
-                            border-left: 3px solid $gold;
-
-                            a {
+    
+                            h1 {
+                                font-weight: 400;
+                                text-align: center;
+                                color: #3e3e3e;
+                                font-size: 32px;
+                            }
+    
+                            #about-txt-heading2 {
+                                margin-top: 10px;
+                            }
+                        
+                            p {
+                                font-size: 16px;
+                                margin-top: 50px;
+                                text-align: center;
+                                line-height: 28px;
+                                //line-height: ;
+                                color: #626161;
+                            }
+    
+                            .about-btn {
                                 height: 40px;
                                 width: 170px;
-                                line-height: 40px;
-                                text-align: center;
-                                font-weight: bold;
+                                margin-top: 50px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-left: 3px solid $gold;
+    
+                                a {
+                                    height: 40px;
+                                    width: 170px;
+                                    line-height: 40px;
+                                    text-align: center;
+                                    font-weight: bold;
+                                }
                             }
                         }
                     }
@@ -119,4 +121,5 @@
             }
         }
     }
-}
+
+
