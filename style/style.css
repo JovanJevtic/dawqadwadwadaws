@@ -1368,165 +1368,297 @@ header.header-scrolled nav .header-expanded ul li a {
   line-height: 20px;
 }
 
-#info {
-  height: 1300px;
-  width: 100%;
-  background: #fff;
+@media screen and (max-width: 799px) {
+  #info {
+    height: 1300px;
+    width: 100%;
+    background: #fff;
+  }
+  #info #info-wrapp {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #info #info-wrapp #info-contact-wrapp {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+  #info #info-wrapp #info-contact-wrapp #info-contact-heading-wrapp {
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #info #info-wrapp #info-contact-wrapp #info-contact-heading-wrapp h1 {
+    font-size: 32px;
+    font-family: 'Dancing Script', cursive;
+    color: #3f3f3f;
+  }
+  #info #info-wrapp #info-contact-wrapp #info-contact-content {
+    width: 100%;
+    height: 700px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #info #info-wrapp #info-contact-wrapp #info-contact-content .info-contact-block {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #info #info-wrapp #info-contact-wrapp #info-contact-content .info-contact-block .contact-info-time-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    border-bottom: 1px dotted #eee;
+  }
+  #info #info-wrapp #info-contact-wrapp #info-contact-content .info-contact-block .contact-info-time-item .info-heading {
+    font-family: 'Lobster', cursive;
+    font-size: 22px;
+  }
+  #info #info-wrapp #info-contact-wrapp #info-contact-content .info-contact-block .contact-info-time-item .info {
+    color: #3f3f3f;
+    margin-top: 5px;
+  }
+  #info #info-wrapp #info-contact-wrapp #info-contact-content .info-contact-block .other-infos {
+    height: 250px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #info #info-wrapp #info-contact-wrapp #info-contact-content .info-contact-block .other-infos .contact-info-other-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #info #info-wrapp #info-contact-wrapp #info-contact-content .info-contact-block .other-infos .contact-info-other-item .other-info-heading {
+    font-family: 'Lobster', cursive;
+    font-size: 22px;
+  }
+  #info #info-wrapp #info-contact-wrapp #info-contact-content .info-contact-block .other-infos .contact-info-other-item .other-info {
+    margin-top: 5px;
+  }
+  #info #info-wrapp #info-map-wrapp {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  #info #info-wrapp #info-map-wrapp #map {
+    width: 100%;
+    height: 109%;
+  }
 }
 
-#info #info-wrapp {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#info #info-wrapp #info-contact-wrapp {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
-}
-
-#info #info-wrapp #info-contact-wrapp #info-contact-heading-wrapp {
-  height: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#info #info-wrapp #info-contact-wrapp #info-contact-heading-wrapp h1 {
-  font-size: 32px;
-  font-family: 'Dancing Script', cursive;
-  color: #3f3f3f;
-}
-
-#info #info-wrapp #info-contact-wrapp #info-contact-content {
-  width: 100%;
-  height: 700px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#info #info-wrapp #info-contact-wrapp #info-contact-content .info-contact-block {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-#info #info-wrapp #info-contact-wrapp #info-contact-content .info-contact-block .contact-info-time-item {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  border-bottom: 1px dotted #eee;
-}
-
-#info #info-wrapp #info-contact-wrapp #info-contact-content .info-contact-block .contact-info-time-item .info-heading {
-  font-family: 'Lobster', cursive;
-  font-size: 22px;
-}
-
-#info #info-wrapp #info-contact-wrapp #info-contact-content .info-contact-block .contact-info-time-item .info {
-  color: #3f3f3f;
-  margin-top: 5px;
-}
-
-#info #info-wrapp #info-contact-wrapp #info-contact-content .info-contact-block .other-infos {
-  height: 250px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#info #info-wrapp #info-contact-wrapp #info-contact-content .info-contact-block .other-infos .contact-info-other-item {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#info #info-wrapp #info-contact-wrapp #info-contact-content .info-contact-block .other-infos .contact-info-other-item .other-info-heading {
-  font-family: 'Lobster', cursive;
-  font-size: 22px;
-}
-
-#info #info-wrapp #info-contact-wrapp #info-contact-content .info-contact-block .other-infos .contact-info-other-item .other-info {
-  margin-top: 5px;
-}
-
-#info #info-wrapp #info-map-wrapp {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-#info #info-wrapp #info-map-wrapp #map {
-  width: 100%;
-  height: 109%;
+@media screen and (min-width: 800px) {
+  #info {
+    height: 900px;
+    width: 100%;
+    background: #fff;
+  }
+  #info #info-wrapp {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #info #info-wrapp #info-contact-wrapp {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  #info #info-wrapp #info-contact-wrapp #info-contact-heading-wrapp {
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #info #info-wrapp #info-contact-wrapp #info-contact-heading-wrapp h1 {
+    font-size: 32px;
+    font-family: 'Dancing Script', cursive;
+    color: #3f3f3f;
+  }
+  #info #info-wrapp #info-contact-wrapp #info-contact-content {
+    width: 100%;
+    height: 700px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #info #info-wrapp #info-contact-wrapp #info-contact-content .info-contact-block {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    max-width: 500px;
+  }
+  #info #info-wrapp #info-contact-wrapp #info-contact-content .info-contact-block .contact-info-time-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    border-bottom: 1px dotted #eee;
+  }
+  #info #info-wrapp #info-contact-wrapp #info-contact-content .info-contact-block .contact-info-time-item .info-heading {
+    font-family: 'Lobster', cursive;
+    font-size: 22px;
+  }
+  #info #info-wrapp #info-contact-wrapp #info-contact-content .info-contact-block .contact-info-time-item .info {
+    color: #3f3f3f;
+    margin-top: 5px;
+  }
+  #info #info-wrapp #info-contact-wrapp #info-contact-content .info-contact-block .other-infos {
+    height: 250px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #info #info-wrapp #info-contact-wrapp #info-contact-content .info-contact-block .other-infos .contact-info-other-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #info #info-wrapp #info-contact-wrapp #info-contact-content .info-contact-block .other-infos .contact-info-other-item .other-info-heading {
+    font-family: 'Lobster', cursive;
+    font-size: 22px;
+  }
+  #info #info-wrapp #info-contact-wrapp #info-contact-content .info-contact-block .other-infos .contact-info-other-item .other-info {
+    margin-top: 5px;
+  }
+  #info #info-wrapp #info-map-wrapp {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  #info #info-wrapp #info-map-wrapp #map {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media screen and (max-width: 799px) {
