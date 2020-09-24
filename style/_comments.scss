@@ -1,7 +1,12 @@
+
 #comments {
     //height: 500px;
     width: 100%;
     background: $darkGrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
     #comments-heading-wrapp {
         height: 110px;
@@ -15,6 +20,10 @@
             font-weight: bold;
             font-family: 'Dancing Script', cursive;
         }
+    }
+
+    .fb-comments {
+        background: $grey;
     }
 
     #comments-gap {
