@@ -1,204 +1,206 @@
-#menu {
-    height: 1950px;
-    width: 100%;
-    background: $grey                                                               ;
-
-    #menu-wrapp {
-        height: 100%;
+@media screen and (max-width: 799px) {
+    #menu {
+        height: 1950px;
         width: 100%;
-
-        #menu-bg {
-            height: 600px;
+        background: $grey                                                               ;
+    
+        #menu-wrapp {
+            height: 100%;
             width: 100%;
-            background: url('../assets/menu_img1.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: top;
-
-            .container {
-                height: 2050px;
-                display: flex;
-                align-items: center;
-
-                #menu-container {
-                    height: 1750px;
-                    width: 100%;
-                    background: #fff;
-                    border-radius: 20px;
-                    box-shadow: 0px 0px 15px #ddd;
-
-                    #menu-heading-wrapp {
-                        height: 350px;
+    
+            #menu-bg {
+                height: 600px;
+                width: 100%;
+                background: url('../assets/menu_img1.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: top;
+    
+                .container {
+                    height: 2050px;
+                    display: flex;
+                    align-items: center;
+    
+                    #menu-container {
+                        height: 1750px;
                         width: 100%;
-                        display: flex;
-                        flex-direction: column;
-
-                        #menu-heading-logo-wrapp {
-                            flex: 1;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-
-                            img {
-                                max-width: 200px;
-                            }
-                        }
-
-                        #menu-heading-heading-wrapp {
-                            flex: 1;
+                        background: #fff;
+                        border-radius: 20px;
+                        box-shadow: 0px 0px 15px #ddd;
+    
+                        #menu-heading-wrapp {
+                            height: 350px;
+                            width: 100%;
                             display: flex;
                             flex-direction: column;
-
-                            #menu-heading-container {
+    
+                            #menu-heading-logo-wrapp {
                                 flex: 1;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
-
-                                h1 {
-                                    text-align: center;
-                                    font-size: 36px;
-                                    font-weight: 400;
+    
+                                img {
+                                    max-width: 200px;
                                 }
                             }
-
-                            #menu-subheading-container {
+    
+                            #menu-heading-heading-wrapp {
                                 flex: 1;
                                 display: flex;
-
-                                .menu-subheading-block {
+                                flex-direction: column;
+    
+                                #menu-heading-container {
                                     flex: 1;
                                     display: flex;
+                                    justify-content: center;
                                     align-items: center;
-
-                                    &:nth-child(1) {
-                                        justify-content: flex-end;
-
-                                        .menu-subheading-line {
-                                            height: 1px;
-                                            width: 50%;
-                                            background-color: #e5e5e5;
-                                        }
-                                    } 
-
-                                    &:nth-child(2) {
+    
+                                    h1 {
                                         text-align: center;
-                                        justify-content: center;
-                                        flex: 1;
-                                        color: #a6a6a6;
+                                        font-size: 36px;
+                                        font-weight: 400;
                                     }
-
-                                    &:nth-child(3) {
-                                        justify-content: flex-start;
-
-                                        .menu-subheading-line {
-                                            height: 1px;
-                                            width: 50%;
-                                            background-color: #e5e5e5;
+                                }
+    
+                                #menu-subheading-container {
+                                    flex: 1;
+                                    display: flex;
+    
+                                    .menu-subheading-block {
+                                        flex: 1;
+                                        display: flex;
+                                        align-items: center;
+    
+                                        &:nth-child(1) {
+                                            justify-content: flex-end;
+    
+                                            .menu-subheading-line {
+                                                height: 1px;
+                                                width: 50%;
+                                                background-color: #e5e5e5;
+                                            }
+                                        } 
+    
+                                        &:nth-child(2) {
+                                            text-align: center;
+                                            justify-content: center;
+                                            flex: 1;
+                                            color: #a6a6a6;
+                                        }
+    
+                                        &:nth-child(3) {
+                                            justify-content: flex-start;
+    
+                                            .menu-subheading-line {
+                                                height: 1px;
+                                                width: 50%;
+                                                background-color: #e5e5e5;
+                                            }
                                         }
                                     }
                                 }
                             }
                         }
-                    }
-
-                    #menu-content-wrapp {
-                        height: 1400px;
-                        width: 100%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-
-                        #menu-content {
+    
+                        #menu-content-wrapp {
                             height: 1400px;
-                            width: 80%;
+                            width: 100%;
                             display: flex;
-                            flex-direction: column;
-
-                           .menu-part {
-                               flex: 1;
-
-                               .menu-list-heading-wrapp {
-                                    height: 50px;
-                                    width: 100%;
-                                    display: flex;
-                                    //align-items: center;
-                                    justify-content: center;
-
-                                    p {
-                                        font-family: 'Dancing Script', cursive;
-                                        font-size: 32px;
-                                        font-weight: bold;
-                                        color: $gold;
-                                    }
-                                    
-                                    #menu-list-heading2 {
-                                        margin-top: 15px;
-                                    }
-                               }
-
-                               .menu-list {
-                                    height: 750px;
-                                    width: 100%;
-                                    display: flex;
-                                    flex-direction: column;
-                                    align-items: center;
-                                    justify-content: space-evenly;
-
-                                    &:nth-child(2) {
-                                        height: 600px;
-                                    }
-
-                                    #menu-btn {
-                                        height: 53px;
-                                        width: 180px;
-                                        background: #fafafa;
+                            align-items: center;
+                            justify-content: center;
+    
+                            #menu-content {
+                                height: 1400px;
+                                width: 80%;
+                                display: flex;
+                                flex-direction: column;
+    
+                               .menu-part {
+                                   flex: 1;
+    
+                                   .menu-list-heading-wrapp {
+                                        height: 50px;
+                                        width: 100%;
                                         display: flex;
-                                        align-items: center;
+                                        //align-items: center;
                                         justify-content: center;
-                                        color: #000;
-                                        font-weight: bold;
-                                        border: 2px solid $gold;
-                                        border-radius: 25px;
-                                        margin-top: 60px;
-                                    
-                                        &:hover, &:focus {
-                                            background: $gold;
-                                            color: #fff;
-                                            transition: .4s;
+    
+                                        p {
+                                            font-family: 'Dancing Script', cursive;
+                                            font-size: 32px;
+                                            font-weight: bold;
+                                            color: $gold;
                                         }
-                                    }
-
-                                    .menu-list-item {
-                                        height: 100px;
+                                        
+                                        #menu-list-heading2 {
+                                            margin-top: 15px;
+                                        }
+                                   }
+    
+                                   .menu-list {
+                                        height: 750px;
                                         width: 100%;
                                         display: flex;
                                         flex-direction: column;
-
-                                        .menu-list-item-heading-wrapp {
-                                            flex: 1;
+                                        align-items: center;
+                                        justify-content: space-evenly;
+    
+                                        &:nth-child(2) {
+                                            height: 600px;
+                                        }
+    
+                                        #menu-btn {
+                                            height: 53px;
+                                            width: 180px;
+                                            background: #fafafa;
                                             display: flex;
-                                            align-items: flex-end;
-                                            border-bottom: 1px dotted #626161;
-
-                                            .menu-list-item-heading {
-                                                font-family: 'Lobster', cursive;
-                                                font-size: 24px;
+                                            align-items: center;
+                                            justify-content: center;
+                                            color: #000;
+                                            font-weight: bold;
+                                            border: 2px solid $gold;
+                                            border-radius: 25px;
+                                            margin-top: 60px;
+                                        
+                                            &:hover, &:focus {
+                                                background: $gold;
+                                                color: #fff;
+                                                transition: .4s;
                                             }
                                         }
-
-                                        .menu-list-item-txt-wrapp {
-                                            flex: 2;
+    
+                                        .menu-list-item {
+                                            height: 100px;
+                                            width: 100%;
                                             display: flex;
-                                            align-items: flex-end;
-                                            text-align: start;
-                                            color: #626161;
-                                            font-size: 14px;
-                                            line-height: 20px;
+                                            flex-direction: column;
+    
+                                            .menu-list-item-heading-wrapp {
+                                                flex: 1;
+                                                display: flex;
+                                                align-items: flex-end;
+                                                border-bottom: 1px dotted #626161;
+    
+                                                .menu-list-item-heading {
+                                                    font-family: 'Lobster', cursive;
+                                                    font-size: 24px;
+                                                }
+                                            }
+    
+                                            .menu-list-item-txt-wrapp {
+                                                flex: 2;
+                                                display: flex;
+                                                align-items: flex-end;
+                                                text-align: start;
+                                                color: #626161;
+                                                font-size: 14px;
+                                                line-height: 20px;
+                                            }
                                         }
-                                    }
-                               }    
-                           }
+                                   }    
+                               }
+                            }
                         }
                     }
                 }
@@ -206,3 +208,433 @@
         }
     }
 }
+
+@media (max-width: 1025px) and (min-width: 800px) {
+    #menu {
+        height: 1950px;
+        width: 100%;
+        background: $grey                                                               ;
+    
+        #menu-wrapp {
+            height: 100%;
+            width: 100%;
+    
+            #menu-bg {
+                height: 600px;
+                width: 100%;
+                background: url('../assets/menu_img1.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: top;
+    
+                .container {
+                    height: 2050px;
+                    display: flex;
+                    align-items: center;
+    
+                    #menu-container {
+                        height: 1750px;
+                        width: 100%;
+                        max-width: 620px;
+                        margin: 0 auto;
+                        background: #fff;
+                        border-radius: 20px;
+                        box-shadow: 0px 0px 15px #ddd;
+    
+                        #menu-heading-wrapp {
+                            height: 350px;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+    
+                            #menu-heading-logo-wrapp {
+                                flex: 1;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+    
+                                img {
+                                    max-width: 200px;
+                                }
+                            }
+    
+                            #menu-heading-heading-wrapp {
+                                flex: 1;
+                                display: flex;
+                                flex-direction: column;
+    
+                                #menu-heading-container {
+                                    flex: 1;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+    
+                                    h1 {
+                                        text-align: center;
+                                        font-size: 36px;
+                                        font-weight: 400;
+                                    }
+                                }
+    
+                                #menu-subheading-container {
+                                    flex: 1;
+                                    display: flex;
+    
+                                    .menu-subheading-block {
+                                        flex: 1;
+                                        display: flex;
+                                        align-items: center;
+    
+                                        &:nth-child(1) {
+                                            justify-content: flex-end;
+                                            flex: 2;
+    
+                                            .menu-subheading-line {
+                                                height: 1px;
+                                                width: 60%;
+                                                background-color: #e5e5e5;
+                                            }
+                                        } 
+    
+                                        &:nth-child(2) {
+                                            text-align: center;
+                                            justify-content: center;
+                                            flex: 1;
+                                            color: #a6a6a6;
+                                        }
+    
+                                        &:nth-child(3) {
+                                            justify-content: flex-start;
+                                            flex: 2;
+
+                                            .menu-subheading-line {
+                                                height: 1px;
+                                                width: 60%;
+                                                background-color: #e5e5e5;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+    
+                        #menu-content-wrapp {
+                            height: 1400px;
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+    
+                            #menu-content {
+                                height: 1400px;
+                                width: 80%;
+                                display: flex;
+                                flex-direction: column;
+    
+                               .menu-part {
+                                   flex: 1;
+    
+                                   .menu-list-heading-wrapp {
+                                        height: 50px;
+                                        width: 100%;
+                                        display: flex;
+                                        //align-items: center;
+                                        justify-content: center;
+    
+                                        p {
+                                            font-family: 'Dancing Script', cursive;
+                                            font-size: 32px;
+                                            font-weight: bold;
+                                            color: $gold;
+                                        }
+                                        
+                                        #menu-list-heading2 {
+                                            margin-top: 15px;
+                                        }
+                                   }
+    
+                                   .menu-list {
+                                        height: 750px;
+                                        width: 100%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        justify-content: space-evenly;
+    
+                                        &:nth-child(2) {
+                                            height: 600px;
+                                        }
+    
+                                        #menu-btn {
+                                            height: 53px;
+                                            width: 180px;
+                                            background: #fafafa;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            color: #000;
+                                            font-weight: bold;
+                                            border: 2px solid $gold;
+                                            border-radius: 25px;
+                                            margin-top: 60px;
+                                        
+                                            &:hover, &:focus {
+                                                background: $gold;
+                                                color: #fff;
+                                                transition: .4s;
+                                            }
+                                        }
+    
+                                        .menu-list-item {
+                                            height: 100px;
+                                            width: 100%;
+                                            display: flex;
+                                            flex-direction: column;
+    
+                                            .menu-list-item-heading-wrapp {
+                                                flex: 1;
+                                                display: flex;
+                                                align-items: flex-end;
+                                                border-bottom: 1px dotted #626161;
+    
+                                                .menu-list-item-heading {
+                                                    font-family: 'Lobster', cursive;
+                                                    font-size: 24px;
+                                                }
+                                            }
+    
+                                            .menu-list-item-txt-wrapp {
+                                                flex: 2;
+                                                display: flex;
+                                                align-items: flex-end;
+                                                text-align: start;
+                                                color: #626161;
+                                                font-size: 14px;
+                                                line-height: 20px;
+                                            }
+                                        }
+                                   }    
+                               }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1026px) {
+    #menu {
+        height: 1450px;
+        width: 100%;
+        background: $grey                                                               ;
+    
+        #menu-wrapp {
+            height: 100%;
+            width: 100%;
+    
+            #menu-bg {
+                height: 600px;
+                width: 100%;
+                background: url('../assets/menu_img1.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: top;
+    
+                .container {
+                    height: 1350px;
+                    display: flex;
+                    align-items: center;
+    
+                    #menu-container {
+                        height: 1250px;
+                        width: 100%;
+                        background: #fff;
+                        border-radius: 20px;
+                        box-shadow: 0px 0px 15px #ddd;
+    
+                        #menu-heading-wrapp {
+                            height: 350px;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+    
+                            #menu-heading-logo-wrapp {
+                                flex: 1;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+    
+                                img {
+                                    max-width: 200px;
+                                }
+                            }
+    
+                            #menu-heading-heading-wrapp {
+                                flex: 1;
+                                display: flex;
+                                flex-direction: column;
+    
+                                #menu-heading-container {
+                                    flex: 1;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+    
+                                    h1 {
+                                        text-align: center;
+                                        font-size: 36px;
+                                        font-weight: 400;
+                                    }
+                                }
+    
+                                #menu-subheading-container {
+                                    flex: 1;
+                                    display: flex;
+    
+                                    .menu-subheading-block {
+                                        flex: 1;
+                                        display: flex;
+                                        align-items: center;
+    
+                                        &:nth-child(1) {
+                                            justify-content: flex-end;
+                                            flex: 3;
+    
+                                            .menu-subheading-line {
+                                                height: 1px;
+                                                width: 50%;
+                                                background-color: #e5e5e5;
+                                            }
+                                        } 
+    
+                                        &:nth-child(2) {
+                                            text-align: center;
+                                            justify-content: center;
+                                            flex: 1;
+                                            color: #a6a6a6;
+                                        }
+    
+                                        &:nth-child(3) {
+                                            justify-content: flex-start;
+                                            flex: 3;
+    
+                                            .menu-subheading-line {
+                                                height: 1px;
+                                                width: 50%;
+                                                background-color: #e5e5e5;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+    
+                        #menu-content-wrapp {
+                            height: 800px;
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+    
+                            #menu-content {
+                                height: 800px;
+                                width: 90%;
+                                display: flex;
+                                justify-content: space-between;
+                                //flex-direction: column;
+    
+                               .menu-part {
+                                   //flex: 1;
+                                   width: 45%;
+    
+                                   .menu-list-heading-wrapp {
+                                        height: 50px;
+                                        width: 100%;
+                                        display: flex;
+                                        //align-items: center;
+                                        justify-content: center;
+    
+                                        p {
+                                            font-family: 'Dancing Script', cursive;
+                                            font-size: 32px;
+                                            font-weight: bold;
+                                            color: $gold;
+                                        }
+                                        
+                                        #menu-list-heading2 {
+                                            margin-top: 15px;
+                                        }
+                                   }
+    
+                                   .menu-list {
+                                        height: 350px;
+                                        width: 100%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        justify-content: space-evenly;
+    
+                                        &:nth-child(2) {
+                                            height: 600px;
+                                        }
+    
+                                        #menu-btn {
+                                            height: 53px;
+                                            width: 180px;
+                                            background: #fafafa;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            color: #000;
+                                            font-weight: bold;
+                                            border: 2px solid $gold;
+                                            border-radius: 25px;
+                                            margin-top: 60px;
+                                        
+                                            &:hover, &:focus {
+                                                background: $gold;
+                                                color: #fff;
+                                                transition: .4s;
+                                            }
+                                        }
+    
+                                        .menu-list-item {
+                                            height: 100px;
+                                            width: 100%;
+                                            display: flex;
+                                            flex-direction: column;
+    
+                                            .menu-list-item-heading-wrapp {
+                                                flex: 1;
+                                                display: flex;
+                                                align-items: flex-end;
+                                                border-bottom: 1px dotted #626161;
+    
+                                                .menu-list-item-heading {
+                                                    font-family: 'Lobster', cursive;
+                                                    font-size: 24px;
+                                                }
+                                            }
+    
+                                            .menu-list-item-txt-wrapp {
+                                                flex: 2;
+                                                display: flex;
+                                                align-items: flex-end;
+                                                text-align: start;
+                                                color: #626161;
+                                                font-size: 14px;
+                                                line-height: 20px;
+                                            }
+                                        }
+                                   }    
+                               }
+                            }
+                        }
+                    }
+                }   
+            }
+        }
+    }
+}   

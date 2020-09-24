@@ -1059,313 +1059,855 @@ header.header-scrolled nav .header-expanded ul li a {
   font-weight: bold;
 }
 
-#menu {
-  height: 1950px;
-  width: 100%;
-  background: #f9f9f9;
+@media screen and (max-width: 799px) {
+  #menu {
+    height: 1950px;
+    width: 100%;
+    background: #f9f9f9;
+  }
+  #menu #menu-wrapp {
+    height: 100%;
+    width: 100%;
+  }
+  #menu #menu-wrapp #menu-bg {
+    height: 600px;
+    width: 100%;
+    background: url("../assets/menu_img1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  #menu #menu-wrapp #menu-bg .container {
+    height: 2050px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container {
+    height: 1750px;
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 15px #ddd;
+            box-shadow: 0px 0px 15px #ddd;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp {
+    height: 350px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-logo-wrapp {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-logo-wrapp img {
+    max-width: 200px;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-heading-container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-heading-container h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block:nth-child(1) {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block:nth-child(1) .menu-subheading-line {
+    height: 1px;
+    width: 50%;
+    background-color: #e5e5e5;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block:nth-child(2) {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    color: #a6a6a6;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block:nth-child(3) {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block:nth-child(3) .menu-subheading-line {
+    height: 1px;
+    width: 50%;
+    background-color: #e5e5e5;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp {
+    height: 1400px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content {
+    height: 1400px;
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list-heading-wrapp {
+    height: 50px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list-heading-wrapp p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    font-weight: bold;
+    color: #c39d63;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list-heading-wrapp #menu-list-heading2 {
+    margin-top: 15px;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list {
+    height: 750px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list:nth-child(2) {
+    height: 600px;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn {
+    height: 53px;
+    width: 180px;
+    background: #fafafa;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #000;
+    font-weight: bold;
+    border: 2px solid #c39d63;
+    border-radius: 25px;
+    margin-top: 60px;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn:hover, #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn:focus {
+    background: #c39d63;
+    color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list .menu-list-item {
+    height: 100px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list .menu-list-item .menu-list-item-heading-wrapp {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    border-bottom: 1px dotted #626161;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list .menu-list-item .menu-list-item-heading-wrapp .menu-list-item-heading {
+    font-family: 'Lobster', cursive;
+    font-size: 24px;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list .menu-list-item .menu-list-item-txt-wrapp {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    text-align: start;
+    color: #626161;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
-#menu #menu-wrapp {
-  height: 100%;
-  width: 100%;
+@media (max-width: 1025px) and (min-width: 800px) {
+  #menu {
+    height: 1950px;
+    width: 100%;
+    background: #f9f9f9;
+  }
+  #menu #menu-wrapp {
+    height: 100%;
+    width: 100%;
+  }
+  #menu #menu-wrapp #menu-bg {
+    height: 600px;
+    width: 100%;
+    background: url("../assets/menu_img1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  #menu #menu-wrapp #menu-bg .container {
+    height: 2050px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container {
+    height: 1750px;
+    width: 100%;
+    max-width: 620px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 15px #ddd;
+            box-shadow: 0px 0px 15px #ddd;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp {
+    height: 350px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-logo-wrapp {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-logo-wrapp img {
+    max-width: 200px;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-heading-container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-heading-container h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block:nth-child(1) {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block:nth-child(1) .menu-subheading-line {
+    height: 1px;
+    width: 60%;
+    background-color: #e5e5e5;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block:nth-child(2) {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    color: #a6a6a6;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block:nth-child(3) {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block:nth-child(3) .menu-subheading-line {
+    height: 1px;
+    width: 60%;
+    background-color: #e5e5e5;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp {
+    height: 1400px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content {
+    height: 1400px;
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list-heading-wrapp {
+    height: 50px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list-heading-wrapp p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    font-weight: bold;
+    color: #c39d63;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list-heading-wrapp #menu-list-heading2 {
+    margin-top: 15px;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list {
+    height: 750px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list:nth-child(2) {
+    height: 600px;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn {
+    height: 53px;
+    width: 180px;
+    background: #fafafa;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #000;
+    font-weight: bold;
+    border: 2px solid #c39d63;
+    border-radius: 25px;
+    margin-top: 60px;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn:hover, #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn:focus {
+    background: #c39d63;
+    color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list .menu-list-item {
+    height: 100px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list .menu-list-item .menu-list-item-heading-wrapp {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    border-bottom: 1px dotted #626161;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list .menu-list-item .menu-list-item-heading-wrapp .menu-list-item-heading {
+    font-family: 'Lobster', cursive;
+    font-size: 24px;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list .menu-list-item .menu-list-item-txt-wrapp {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    text-align: start;
+    color: #626161;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
-#menu #menu-wrapp #menu-bg {
-  height: 600px;
-  width: 100%;
-  background: url("../assets/menu_img1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-}
-
-#menu #menu-wrapp #menu-bg .container {
-  height: 2050px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#menu #menu-wrapp #menu-bg .container #menu-container {
-  height: 1750px;
-  width: 100%;
-  background: #fff;
-  border-radius: 20px;
-  -webkit-box-shadow: 0px 0px 15px #ddd;
-          box-shadow: 0px 0px 15px #ddd;
-}
-
-#menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp {
-  height: 350px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-logo-wrapp {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-logo-wrapp img {
-  max-width: 200px;
-}
-
-#menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-heading-container {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-heading-container h1 {
-  text-align: center;
-  font-size: 36px;
-  font-weight: 400;
-}
-
-#menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block:nth-child(1) {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-#menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block:nth-child(1) .menu-subheading-line {
-  height: 1px;
-  width: 50%;
-  background-color: #e5e5e5;
-}
-
-#menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block:nth-child(2) {
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  color: #a6a6a6;
-}
-
-#menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block:nth-child(3) {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-#menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block:nth-child(3) .menu-subheading-line {
-  height: 1px;
-  width: 50%;
-  background-color: #e5e5e5;
-}
-
-#menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp {
-  height: 1400px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content {
-  height: 1400px;
-  width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-#menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list-heading-wrapp {
-  height: 50px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list-heading-wrapp p {
-  font-family: 'Dancing Script', cursive;
-  font-size: 32px;
-  font-weight: bold;
-  color: #c39d63;
-}
-
-#menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list-heading-wrapp #menu-list-heading2 {
-  margin-top: 15px;
-}
-
-#menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list {
-  height: 750px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-#menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list:nth-child(2) {
-  height: 600px;
-}
-
-#menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn {
-  height: 53px;
-  width: 180px;
-  background: #fafafa;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #000;
-  font-weight: bold;
-  border: 2px solid #c39d63;
-  border-radius: 25px;
-  margin-top: 60px;
-}
-
-#menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn:hover, #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn:focus {
-  background: #c39d63;
-  color: #fff;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-#menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list .menu-list-item {
-  height: 100px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list .menu-list-item .menu-list-item-heading-wrapp {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  border-bottom: 1px dotted #626161;
-}
-
-#menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list .menu-list-item .menu-list-item-heading-wrapp .menu-list-item-heading {
-  font-family: 'Lobster', cursive;
-  font-size: 24px;
-}
-
-#menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list .menu-list-item .menu-list-item-txt-wrapp {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  text-align: start;
-  color: #626161;
-  font-size: 14px;
-  line-height: 20px;
+@media screen and (min-width: 1026px) {
+  #menu {
+    height: 1450px;
+    width: 100%;
+    background: #f9f9f9;
+  }
+  #menu #menu-wrapp {
+    height: 100%;
+    width: 100%;
+  }
+  #menu #menu-wrapp #menu-bg {
+    height: 600px;
+    width: 100%;
+    background: url("../assets/menu_img1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  #menu #menu-wrapp #menu-bg .container {
+    height: 1350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container {
+    height: 1250px;
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 15px #ddd;
+            box-shadow: 0px 0px 15px #ddd;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp {
+    height: 350px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-logo-wrapp {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-logo-wrapp img {
+    max-width: 200px;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-heading-container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-heading-container h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block:nth-child(1) {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block:nth-child(1) .menu-subheading-line {
+    height: 1px;
+    width: 50%;
+    background-color: #e5e5e5;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block:nth-child(2) {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    color: #a6a6a6;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block:nth-child(3) {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-heading-wrapp #menu-heading-heading-wrapp #menu-subheading-container .menu-subheading-block:nth-child(3) .menu-subheading-line {
+    height: 1px;
+    width: 50%;
+    background-color: #e5e5e5;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp {
+    height: 800px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content {
+    height: 800px;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part {
+    width: 45%;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list-heading-wrapp {
+    height: 50px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list-heading-wrapp p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    font-weight: bold;
+    color: #c39d63;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list-heading-wrapp #menu-list-heading2 {
+    margin-top: 15px;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list {
+    height: 350px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list:nth-child(2) {
+    height: 600px;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn {
+    height: 53px;
+    width: 180px;
+    background: #fafafa;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #000;
+    font-weight: bold;
+    border: 2px solid #c39d63;
+    border-radius: 25px;
+    margin-top: 60px;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn:hover, #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn:focus {
+    background: #c39d63;
+    color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list .menu-list-item {
+    height: 100px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list .menu-list-item .menu-list-item-heading-wrapp {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    border-bottom: 1px dotted #626161;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list .menu-list-item .menu-list-item-heading-wrapp .menu-list-item-heading {
+    font-family: 'Lobster', cursive;
+    font-size: 24px;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list .menu-list-item .menu-list-item-txt-wrapp {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    text-align: start;
+    color: #626161;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 @media screen and (max-width: 799px) {
