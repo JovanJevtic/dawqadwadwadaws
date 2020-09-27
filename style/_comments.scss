@@ -2,14 +2,16 @@
 #comments {
     //height: 500px;
     width: 100%;
-    background: $darkGrey;
+    background: $darkGrey url('../assets/comments-bg2.jpg') bottom;
+    background-size: 100% 70%;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     
     #comments-heading-wrapp {
-        height: 110px;
+        height: 150px;
         display: flex;
         justify-content: center;
         align-items: center;
