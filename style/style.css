@@ -1646,7 +1646,7 @@ header.header-scrolled nav .header-expanded ul li a {
     background-position: top;
   }
   #menu #menu-wrapp #menu-bg .container {
-    height: 1350px;
+    height: 1450px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1655,7 +1655,7 @@ header.header-scrolled nav .header-expanded ul li a {
             align-items: center;
   }
   #menu #menu-wrapp #menu-bg .container #menu-container {
-    height: 1250px;
+    height: 1200px;
     width: 100%;
     background: #fff;
     border-radius: 20px;
@@ -1777,7 +1777,7 @@ header.header-scrolled nav .header-expanded ul li a {
     background-color: #e5e5e5;
   }
   #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp {
-    height: 800px;
+    height: 850px;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1790,7 +1790,7 @@ header.header-scrolled nav .header-expanded ul li a {
             justify-content: center;
   }
   #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content {
-    height: 800px;
+    height: 850px;
     width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1818,11 +1818,8 @@ header.header-scrolled nav .header-expanded ul li a {
     font-weight: bold;
     color: #c39d63;
   }
-  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list-heading-wrapp #menu-list-heading2 {
-    margin-top: 15px;
-  }
   #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list {
-    height: 350px;
+    height: 800px;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1837,34 +1834,6 @@ header.header-scrolled nav .header-expanded ul li a {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-  }
-  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list:nth-child(2) {
-    height: 600px;
-  }
-  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn {
-    height: 53px;
-    width: 180px;
-    background: #fafafa;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    color: #000;
-    font-weight: bold;
-    border: 2px solid #c39d63;
-    border-radius: 25px;
-    margin-top: 60px;
-  }
-  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn:hover, #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn:focus {
-    background: #c39d63;
-    color: #fff;
-    -webkit-transition: .4s;
-    transition: .4s;
   }
   #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list .menu-list-item {
     height: 100px;
@@ -1907,6 +1876,43 @@ header.header-scrolled nav .header-expanded ul li a {
     color: #626161;
     font-size: 14px;
     line-height: 20px;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn {
+    height: 53px;
+    width: 180px;
+    background: #fff;
+    background: #c39d63;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #000;
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid #c39d63;
+    border-radius: 25px;
+  }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn:hover, #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn:focus {
+    background: #c39d63;
+    color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
   }
 }
 

@@ -443,12 +443,12 @@
                 background-position: top;
     
                 .container {
-                    height: 1350px;
+                    height: 1450px;
                     display: flex;
                     align-items: center;
     
                     #menu-container {
-                        height: 1250px;
+                        height: 1200px;
                         width: 100%;
                         background: #fff;
                         border-radius: 20px;
@@ -532,14 +532,14 @@
                         }
     
                         #menu-content-wrapp {
-                            height: 800px;
+                            height: 850px;
                             width: 100%;
                             display: flex;
                             align-items: center;
                             justify-content: center;
     
                             #menu-content {
-                                height: 800px;
+                                height: 850px;
                                 width: 90%;
                                 display: flex;
                                 justify-content: space-between;
@@ -555,56 +555,29 @@
                                         display: flex;
                                         //align-items: center;
                                         justify-content: center;
-    
+                                        
                                         p {
                                             font-family: 'Dancing Script', cursive;
                                             font-size: 32px;
                                             font-weight: bold;
                                             color: $gold;
                                         }
-                                        
-                                        #menu-list-heading2 {
-                                            margin-top: 15px;
-                                        }
                                    }
     
                                    .menu-list {
-                                        height: 350px;
+                                        //background: red;
+                                        height: 800px;
                                         width: 100%;
                                         display: flex;
                                         flex-direction: column;
                                         align-items: center;
-                                        justify-content: space-evenly;
-    
-                                        &:nth-child(2) {
-                                            height: 600px;
-                                        }
-    
-                                        #menu-btn {
-                                            height: 53px;
-                                            width: 180px;
-                                            background: #fafafa;
-                                            display: flex;
-                                            align-items: center;
-                                            justify-content: center;
-                                            color: #000;
-                                            font-weight: bold;
-                                            border: 2px solid $gold;
-                                            border-radius: 25px;
-                                            margin-top: 60px;
-                                        
-                                            &:hover, &:focus {
-                                                background: $gold;
-                                                color: #fff;
-                                                transition: .4s;
-                                            }
-                                        }
+                                        justify-content: space-evenly; 
     
                                         .menu-list-item {
                                             height: 100px;
                                             width: 100%;
                                             display: flex;
-                                            flex-direction: column;
+                                            flex-direction: column; 
     
                                             .menu-list-item-heading-wrapp {
                                                 flex: 1;
@@ -626,6 +599,33 @@
                                                 color: #626161;
                                                 font-size: 14px;
                                                 line-height: 20px;
+                                            }
+                                        }
+
+                                        #menu-btn-item {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                        }
+
+                                        #menu-btn {
+                                            height: 53px;
+                                            width: 180px;
+                                            background: #fff;
+                                            background: $gold;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            color: #000;
+                                            color: #fff;
+                                            font-weight: bold;
+                                            border: 2px solid $gold;
+                                            border-radius: 25px;
+                                        
+                                            &:hover, &:focus {
+                                                background: $gold;
+                                                color: #fff;
+                                                transition: .4s;
                                             }
                                         }
                                    }    
