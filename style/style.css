@@ -793,16 +793,19 @@ header.header-scrolled nav .header-expanded ul li a {
     color: #f9f9f9;
     font-size: 220px;
     font-family: 'Lobster', cursive;
-    bottom: 80px;
+    margin-top: -100px;
+    position: absolute;
+    letter-spacing: 30px;
     z-index: 1;
   }
   #offer #offer-content-wrapp #offer-content-bgs #offer-content-bg-two i {
     color: #f9f9f9;
     font-size: 220px;
     font-family: 'Lobster', cursive;
-    bottom: 80px;
+    position: absolute;
+    margin-top: 400px;
     z-index: 1;
-    margin-top: 100px;
+    letter-spacing: 40px;
   }
   #offer #offer-content-wrapp #offer-content {
     margin-top: -1500px;
@@ -832,6 +835,7 @@ header.header-scrolled nav .header-expanded ul li a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    z-index: 5;
   }
   #offer #offer-content-wrapp #offer-content .offer-card .offer-card-wrapp {
     height: 80%;
@@ -1482,19 +1486,9 @@ header.header-scrolled nav .header-expanded ul li a {
     text-align: center;
     font-weight: bold;
   }
-}
-
-#about {
-  height: 1960px;
-  width: 100%;
-  background: #fff;
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "img1 txt" "txt img2";
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  #about-txt1, #about-txt2 {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 799px) {

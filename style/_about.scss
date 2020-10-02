@@ -1,8 +1,8 @@
 @media screen and (max-width: 799px) {
     #about {
         height: 1560px;
-            width: 100%;
-            
+        width: 100%;
+        
             .about-img-wrapp {
                 height: 280px;
                 width: 100%;
@@ -121,21 +121,10 @@
                 }
             }
     }
-}
 
-#about {
-    height: 1960px;
-    width: 100%;
-    background: #fff;
-    display: grid;
-    grid-template-areas: 
-        "img1 txt"
-        "txt img2" 
-    ;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-
-    
+    #about-txt1, #about-txt2 {
+        display: none;
+    }
 }
 
 
