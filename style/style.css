@@ -721,6 +721,9 @@ header.header-scrolled nav .header-expanded ul li a {
     font-weight: bold;
     font-family: 'Dancing Script', cursive;
     color: #3e3e3e;
+    max-width: 300px;
+    text-align: center;
+    margin-top: -5px;
   }
   #offer #offer-heading-wrapp #offer-heading-content #offer-subheading-container {
     -webkit-box-flex: 1;
@@ -789,23 +792,35 @@ header.header-scrolled nav .header-expanded ul li a {
     width: 100%;
     background: #f0f0f0;
   }
-  #offer #offer-content-wrapp #offer-content-bgs #offer-content-bg-two p {
+  #offer #offer-content-wrapp #offer-content-bgs #offer-content-bg-two .offer-bg-txt1 {
     color: #f9f9f9;
-    font-size: 220px;
+    font-size: 200px;
     font-family: 'Lobster', cursive;
     margin-top: -100px;
     position: absolute;
     letter-spacing: 30px;
     z-index: 1;
+    margin-left: 30px;
   }
-  #offer #offer-content-wrapp #offer-content-bgs #offer-content-bg-two i {
+  #offer #offer-content-wrapp #offer-content-bgs #offer-content-bg-two .offer-bg-txt2 {
+    color: #f9f9f9;
+    font-size: 200px;
+    font-family: 'Lobster', cursive;
+    margin-top: 250px;
+    position: absolute;
+    letter-spacing: 30px;
+    z-index: 1;
+    right: 50px;
+  }
+  #offer #offer-content-wrapp #offer-content-bgs #offer-content-bg-two .offer-bg-txt3 {
     color: #f9f9f9;
     font-size: 220px;
     font-family: 'Lobster', cursive;
     position: absolute;
-    margin-top: 400px;
+    margin-top: 650px;
     z-index: 1;
     letter-spacing: 40px;
+    left: 50px;
   }
   #offer #offer-content-wrapp #offer-content {
     margin-top: -1500px;
@@ -891,9 +906,13 @@ header.header-scrolled nav .header-expanded ul li a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  #offer #offer-content-wrapp #offer-content .offer-card .offer-card-wrapp .offer-card-txt-wrapp p {
+    color: #626161;
+  }
   #offer #offer-content-wrapp #offer-content .offer-card .offer-card-wrapp .offer-card-txt-wrapp .offer-card-heading {
     font-family: 'Dancing Script', cursive;
-    font-size: 24px;
+    font-size: 26px;
+    color: #000;
   }
 }
 

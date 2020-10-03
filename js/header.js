@@ -12,31 +12,12 @@ const header = () => {
         header.classList.remove('hide')
     })
 
-    links[0].addEventListener('click', () => {
-        nav.classList.toggle('expanded')
-        hamburger.classList.toggle('hamburger-active')
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.toggle('expanded')
+            hamburger.classList.toggle('hamburger-active')
+        })
     })
-
-    links[1].addEventListener('click', () => {
-        nav.classList.toggle('expanded')
-        hamburger.classList.toggle('hamburger-active') 
-    })
-
-    links[2].addEventListener('click', () => {
-        nav.classList.toggle('expanded')
-        hamburger.classList.toggle('hamburger-active')
-    })
-
-    links[3].addEventListener('click', () => {
-        nav.classList.toggle('expanded')
-        hamburger.classList.toggle('hamburger-active')
-    })
-
-    links[4].addEventListener('click', () => {
-        nav.classList.toggle('expanded')
-        hamburger.classList.toggle('hamburger-active')
-    })  
-
 
     //* Header change style on scroll
     const scrolledHeader = () => {
@@ -66,6 +47,7 @@ export const headerScrolling = () => {
     let prevDirection = 0
 
     const header = document.querySelector('header')
+    const nav = document.querySelector('.header-expanded')
 
     const checkScroll = () => {
     
@@ -79,14 +61,14 @@ export const headerScrolling = () => {
           direction = 1
         }
     
-        if (direction !== prevDirection) {
+        if (direction !== prevDirection  && nav.classList.value != 'header-expanded expanded') {
           toggleHeader(direction, curScroll)
         }
         
         prevScroll = curScroll;
     }
 
-    const toggleHeader = (direction, curScroll) => {
+    var toggleHeader = (direction, curScroll) => {
         if (direction === 2 && curScroll > 80) { 
           
           header.classList.add('hide');
@@ -99,5 +81,4 @@ export const headerScrolling = () => {
     }
 
     window.addEventListener('scroll', checkScroll)
-    
 }
