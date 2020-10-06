@@ -1698,8 +1698,11 @@ header.header-scrolled nav .header-expanded ul li a {
     font-weight: bold;
     color: #c39d63;
   }
+  #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list-heading-wrapp #menu-list-heading1 {
+    margin-top: 20px;
+  }
   #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list-heading-wrapp #menu-list-heading2 {
-    margin-top: 15px;
+    margin-top: 10px;
   }
   #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list {
     height: 750px;
