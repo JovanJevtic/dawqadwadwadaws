@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lobster&family=Tajawal:wght@400;500&display=swap");
 @-webkit-keyframes hamburgerLineOne {
   from {
@@ -106,7 +107,7 @@
   header nav .logo-wrapp .logo {
     font-size: 38px;
     font-family: 'Dancing Script', cursive;
-    color: #fff;
+    color: #000;
     font-weight: bold;
   }
   header nav .menu-wrapp {
@@ -145,7 +146,7 @@
   header nav .menu-wrapp .hamburger .line {
     height: 2px;
     width: 26px;
-    background: #f0f0f0;
+    background: #000;
   }
   header nav .menu-wrapp .hamburger.hamburger-active .line:nth-child(1) {
     -webkit-transform: rotate(50deg) translateY(15px);
@@ -322,9 +323,9 @@ header.header-scrolled nav .header-expanded ul li a {
             justify-content: flex-start;
   }
   header nav .logo-wrapp .logo {
-    font-size: 42px;
-    font-family: 'Dancing Script', cursive;
-    color: #fff;
+    font-size: 46px;
+    font-family: 'Sansita Swashed', cursive;
+    color: #000;
     font-weight: bold;
   }
   header nav .menu-wrapp {
@@ -367,8 +368,7 @@ header.header-scrolled nav .header-expanded ul li a {
   }
   header nav .header-expanded ul li a {
     font-size: 16px;
-    color: #fff;
-    font-weight: bold;
+    color: #000;
     height: 100%;
     width: 100%;
     display: -webkit-box;
@@ -385,41 +385,30 @@ header.header-scrolled nav .header-expanded ul li a {
 
 @media screen and (max-width: 799px) {
   #landing {
-    height: 100vh;
-    min-height: 700px;
-    max-height: 800px;
+    height: 1380px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#dfebff), to(#f9f9f9));
+    background: linear-gradient(180deg, #dfebff, #f9f9f9);
     width: 100%;
   }
-  #landing #landing-bg {
+  #landing #landing-wrapp {
     height: 100%;
     width: 100%;
-    background: url("../assets/Hero.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-  }
-  #landing #landing-bg #landing-bg-darker {
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.6);
-  }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp {
-    height: 100%;
-    width: 100%;
-  }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp .header-gap {
-    height: 100px;
-  }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content {
-    width: 100%;
-    color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #landing #landing-wrapp #landing-content-wrapp {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -428,250 +417,608 @@ header.header-scrolled nav .header-expanded ul li a {
         -ms-flex-align: center;
             align-items: center;
   }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content .subheading {
-    font-size: 34px;
-    color: #ff934a;
+  #landing #landing-wrapp #landing-content-wrapp .gap {
+    height: 100px;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #subheading {
+    margin-top: 40px;
     font-family: 'Dancing Script', cursive;
-    margin-top: 100px;
+    font-size: 32px;
+    color: #333;
   }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content .landing-p {
-    text-transform: uppercase;
-    margin-top: 14px;
-  }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content .heading {
-    text-transform: capitalize;
-    font-size: 52px;
+  #landing #landing-wrapp #landing-content-wrapp #heading {
     text-align: center;
-    margin-top: 20px;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-top: 25px;
   }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content #scroll-svg {
-    max-height: 120px;
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp {
+    margin-top: 100px;
+    height: 110px;
+    width: 300px;
+    border: 1px solid #720a64;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #333;
+    background: #ffffff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search #landing-search-icon {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search #landing-search-icon i {
+    font-size: 20px;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search #landing-search-txt {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-btn {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #720a64;
+    color: #fff;
+    font-weight: bold;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp {
+    height: 50px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp a {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp a i {
+    font-size: 40px;
+    color: #333;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp a i:hover {
+    color: #720a64;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  #landing #landing-wrapp #landing-bg-wrapp {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #landing #landing-wrapp #landing-bg-wrapp img {
+    height: 510px;
+    width: 510px;
     position: absolute;
-    margin-top: 300px;
-  }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content #scroll-svg #scroll-svg-dot {
-    -webkit-animation: svgDotAnimation 2s ease-in-out infinite;
-            animation: svgDotAnimation 2s ease-in-out infinite;
   }
 }
 
 @media screen and (min-width: 800px) {
   #landing {
-    height: 100vh;
-    min-height: 700px;
-    max-height: 1920px;
-    width: 100%;
+    height: 1080px;
+    min-height: 100vh;
+    background: -webkit-gradient(linear, left top, right top, from(#dfebff), to(#f9f9f9));
+    background: linear-gradient(90deg, #dfebff, #f9f9f9);
   }
-  #landing #landing-bg {
+  #landing #landing-wrapp {
     height: 100%;
     width: 100%;
-    background: url("../assets/Hero.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  #landing #landing-bg #landing-bg-darker {
+  #landing #landing-wrapp #landing-content-wrapp {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.6);
   }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp {
-    height: 100%;
-    width: 100%;
-  }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp .header-gap {
+  #landing #landing-wrapp #landing-content-wrapp .gap {
     height: 100px;
   }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content {
-    width: 100%;
-    color: #fff;
+  #landing #landing-wrapp #landing-content-wrapp #subheading {
+    margin-top: 5   0px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    color: #333;
+    z-index: 5;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #heading {
+    font-size: 62px;
+    text-transform: capitalize;
+    margin-top: 15px;
+    z-index: 5;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp {
+    margin-top: 100px;
+    height: 55px;
+    width: 500px;
+    border: 1px solid #720a64;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 5;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search {
+    -webkit-box-flex: 9;
+        -ms-flex: 9;
+            flex: 9;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #333;
+    background: #ffffff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search #landing-search-icon {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search #landing-search-icon i {
+    font-size: 20px;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search #landing-search-txt {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content .subheading {
-    font-size: 48px;
-    color: #ff934a;
-    font-family: 'Dancing Script', cursive;
-    margin-top: 250px;
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-btn {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #720a64;
+    color: #fff;
+    font-weight: bold;
   }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content .landing-p {
-    text-transform: uppercase;
-    margin-top: 24px;
-    font-size: 14px;
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp {
+    height: 50px;
+    width: 220px;
+    margin-top: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content .heading {
-    text-transform: capitalize;
-    font-size: 72px;
-    text-align: center;
-    margin-top: 20px;
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp a {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content #scroll-svg {
-    max-height: 120px;
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp a i {
+    font-size: 40px;
+    color: #333;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp a i:hover {
+    color: #720a64;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  #landing #landing-wrapp #landing-bg-wrapp {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #landing #landing-wrapp #landing-bg-wrapp img {
+    height: 450px;
+    width: 450px;
     position: absolute;
-    bottom: 50px;
-  }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content #scroll-svg #scroll-svg-dot {
-    -webkit-animation: svgDotAnimation 2s ease-in-out infinite;
-            animation: svgDotAnimation 2s ease-in-out infinite;
+    margin-top: 300px;
+    z-index: 1;
   }
 }
 
 @media screen and (min-width: 1026px) {
   #landing {
-    height: 100vh;
-    min-height: 1200px;
-    max-height: 1920px;
-    width: 100%;
+    height: 1080px;
+    min-height: 100vh;
+    background: -webkit-gradient(linear, left top, right top, from(#dfebff), to(#f9f9f9));
+    background: linear-gradient(90deg, #dfebff, #f9f9f9);
   }
-  #landing #landing-bg {
+  #landing #landing-wrapp {
     height: 100%;
     width: 100%;
-    background: url("../assets/Hero.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  #landing #landing-bg #landing-bg-darker {
+  #landing #landing-wrapp #landing-content-wrapp {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.6);
   }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp {
-    height: 100%;
-    width: 100%;
-  }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp .header-gap {
+  #landing #landing-wrapp #landing-content-wrapp .gap {
     height: 100px;
   }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content {
-    width: 100%;
-    color: #fff;
+  #landing #landing-wrapp #landing-content-wrapp #subheading {
+    margin-top: 160px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    color: #333;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #heading {
+    font-size: 62px;
+    text-transform: capitalize;
+    margin-top: 15px;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp {
+    margin-top: 100px;
+    height: 55px;
+    width: 500px;
+    border: 1px solid #720a64;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search {
+    -webkit-box-flex: 9;
+        -ms-flex: 9;
+            flex: 9;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #333;
+    background: #ffffff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search #landing-search-icon {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search #landing-search-icon i {
+    font-size: 20px;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search #landing-search-txt {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content .subheading {
-    font-size: 64px;
-    color: #ff934a;
-    font-family: 'Dancing Script', cursive;
-    margin-top: 220px;
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-btn {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #720a64;
+    color: #fff;
+    font-weight: bold;
   }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content .landing-p {
-    text-transform: uppercase;
-    margin-top: 24px;
-    font-size: 17px;
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp {
+    height: 50px;
+    width: 220px;
+    margin-top: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content .heading {
-    text-transform: capitalize;
-    font-size: 92px;
-    text-align: center;
-    margin-top: 20px;
-    max-width: 800px;
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp a {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content #scroll-svg {
-    max-height: 120px;
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp a i {
+    font-size: 40px;
+    color: #333;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp a i:hover {
+    color: #720a64;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  #landing #landing-wrapp #landing-bg-wrapp {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #landing #landing-wrapp #landing-bg-wrapp img {
+    margin-top: -100px;
+    height: 450px;
+    width: 450px;
     position: absolute;
-    margin-top: 300px;
-  }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content #scroll-svg #scroll-svg-dot {
-    -webkit-animation: svgDotAnimation 2s ease-in-out infinite;
-            animation: svgDotAnimation 2s ease-in-out infinite;
   }
 }
 
 @media screen and (min-width: 1240px) {
   #landing {
-    height: 100vh;
-    min-height: 1200px;
-    max-height: 1920px;
-    width: 100%;
+    height: 1080px;
+    min-height: 100vh;
+    background: -webkit-gradient(linear, left top, right top, from(#dfebff), to(#f9f9f9));
+    background: linear-gradient(90deg, #dfebff, #f9f9f9);
   }
-  #landing #landing-bg {
+  #landing #landing-wrapp {
     height: 100%;
     width: 100%;
-    background: url("../assets/Hero.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  #landing #landing-bg #landing-bg-darker {
+  #landing #landing-wrapp #landing-content-wrapp {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.6);
   }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp {
-    height: 100%;
-    width: 100%;
-  }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp .header-gap {
+  #landing #landing-wrapp #landing-content-wrapp .gap {
     height: 100px;
   }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content {
-    width: 100%;
-    color: #fff;
+  #landing #landing-wrapp #landing-content-wrapp #subheading {
+    margin-top: 160px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    color: #333;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #heading {
+    font-size: 62px;
+    text-transform: capitalize;
+    margin-top: 15px;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp {
+    margin-top: 100px;
+    height: 55px;
+    width: 500px;
+    border: 1px solid #720a64;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search {
+    -webkit-box-flex: 9;
+        -ms-flex: 9;
+            flex: 9;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #333;
+    background: #ffffff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search #landing-search-icon {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search #landing-search-icon i {
+    font-size: 20px;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search #landing-search-txt {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content .subheading {
-    font-size: 64px;
-    color: #ff934a;
-    font-family: 'Dancing Script', cursive;
-    margin-top: 220px;
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-btn {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #720a64;
+    color: #fff;
+    font-weight: bold;
   }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content .landing-p {
-    text-transform: uppercase;
-    margin-top: 24px;
-    font-size: 17px;
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp {
+    height: 50px;
+    width: 220px;
+    margin-top: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content .heading {
-    text-transform: capitalize;
-    font-size: 92px;
-    text-align: center;
-    margin-top: 20px;
-    max-width: 800px;
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp a {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content #scroll-svg {
-    max-height: 120px;
-    margin-top: 300px;
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp a i {
+    font-size: 40px;
+    color: #333;
   }
-  #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content #scroll-svg #scroll-svg-dot {
-    -webkit-animation: svgDotAnimation 2s ease-in-out infinite;
-            animation: svgDotAnimation 2s ease-in-out infinite;
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp a i:hover {
+    color: #720a64;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  #landing #landing-wrapp #landing-bg-wrapp {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #landing #landing-wrapp #landing-bg-wrapp img {
+    height: 510px;
+    width: 510px;
+    position: absolute;
   }
 }
 
@@ -1511,7 +1858,7 @@ header.header-scrolled nav .header-expanded ul li a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    border-left: 3px solid #ff934a;
+    border-left: 3px solid #f6741d;
   }
   #about #about-txt-wrapp #about-txt-container .container .about-txt-block .about-txt .about-btn a {
     height: 40px;
@@ -1711,7 +2058,7 @@ header.header-scrolled nav .header-expanded ul li a {
     font-family: 'Dancing Script', cursive;
     font-size: 32px;
     font-weight: bold;
-    color: #ff934a;
+    color: #f6741d;
   }
   #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list-heading-wrapp #menu-list-heading1 {
     margin-top: 20px;
@@ -1767,11 +2114,11 @@ header.header-scrolled nav .header-expanded ul li a {
     color: #000;
     color: #fff;
     font-weight: bold;
-    border: 2px solid #ff934a;
+    border: 2px solid #f6741d;
     border-radius: 25px;
   }
   #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn:hover, #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn:focus {
-    background: #ff934a;
+    background: #f6741d;
     color: #fff;
     -webkit-transition: .4s;
     transition: .4s;
@@ -2014,7 +2361,7 @@ header.header-scrolled nav .header-expanded ul li a {
     font-family: 'Dancing Script', cursive;
     font-size: 32px;
     font-weight: bold;
-    color: #ff934a;
+    color: #f6741d;
   }
   #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list-heading-wrapp #menu-list-heading2 {
     margin-top: 15px;
@@ -2055,7 +2402,7 @@ header.header-scrolled nav .header-expanded ul li a {
     height: 53px;
     width: 180px;
     background: #fff;
-    background: #ff934a;
+    background: #f6741d;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2068,11 +2415,11 @@ header.header-scrolled nav .header-expanded ul li a {
     color: #000;
     color: #fff;
     font-weight: bold;
-    border: 2px solid #ff934a;
+    border: 2px solid #f6741d;
     border-radius: 25px;
   }
   #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn:hover, #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn:focus {
-    background: #ff934a;
+    background: #f6741d;
     color: #fff;
     -webkit-transition: .4s;
     transition: .4s;
@@ -2310,7 +2657,7 @@ header.header-scrolled nav .header-expanded ul li a {
     font-family: 'Dancing Script', cursive;
     font-size: 32px;
     font-weight: bold;
-    color: #ff934a;
+    color: #f6741d;
   }
   #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list {
     height: 800px;
@@ -2386,7 +2733,7 @@ header.header-scrolled nav .header-expanded ul li a {
     height: 53px;
     width: 180px;
     background: #fff;
-    background: #ff934a;
+    background: #f6741d;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2399,11 +2746,11 @@ header.header-scrolled nav .header-expanded ul li a {
     color: #000;
     color: #fff;
     font-weight: bold;
-    border: 2px solid #ff934a;
+    border: 2px solid #f6741d;
     border-radius: 25px;
   }
   #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn:hover, #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn:focus {
-    background: #ff934a;
+    background: #f6741d;
     color: #fff;
     -webkit-transition: .4s;
     transition: .4s;
@@ -2859,12 +3206,12 @@ header.header-scrolled nav .header-expanded ul li a {
 }
 
 ::-moz-selection {
-  background: #ff934a;
+  background: #f6741d;
   color: #f0f0f0;
 }
 
 ::selection {
-  background: #ff934a;
+  background: #f6741d;
   color: #f0f0f0;
 }
 
@@ -2878,7 +3225,7 @@ body {
 }
 
 h1 {
-  font-family: 'Lobster', cursive;
+  font-family: 'Sansita Swashed', cursive;
 }
 
 a {

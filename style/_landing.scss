@@ -1,70 +1,127 @@
 @media screen and (max-width: 799px) {
     #landing {
-        height: 100vh;
-        min-height: 700px;
-        max-height: 800px;
+        height: 1380px;
+        background: linear-gradient(180deg, #dfebff, #f9f9f9);
         width: 100%;
     
-        #landing-bg {
+        #landing-wrapp {
             height: 100%;
             width: 100%;
-            background: url('../assets/Hero.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-attachment: fixed;
-    
-            #landing-bg-darker {
+            display: flex;
+            flex-direction: column;
+
+            #landing-content-wrapp {
+                flex: 1;
                 height: 100%;
-                width: 100%;
-                background: rgba(0, 0, 0, 0.6);
-            
-                #landing-wrapp {
-                    height: 100%;
-                    width: 100%;
-                    
-                    .header-gap {
-                        height: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                .gap {  
+                    height: 100px;
+                }
+    
+                #subheading {
+                    margin-top: 40px;
+                    font-family: 'Dancing Script', cursive;
+                    font-size: 32px;
+                    color: #333;
+                }
+    
+                #heading {
+                    text-align: center;
+                    font-size: 40px;
+                    text-transform: capitalize;
+                    margin-top: 25px;
+                }
+    
+                #landing-btn-wrapp {
+                    margin-top: 100px;
+                    height: 110px;
+                    width: 300px;
+                    border: 1px solid $cta;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+    
+                    #landing-search {
+                        flex: 1;
+                        height: 100%;
+                        display: flex;
+                        color: #333;
+                        background: #ffffff;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+    
+                        #landing-search-icon {
+                            flex: 1;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100%;
+    
+                            i {
+                                font-size: 20px;
+                            }
+                        }
+    
+                        #landing-search-txt {
+                            flex: 4;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                        }
                     }
     
-                    #landing-content {
-                        width: 100%;
-                        color: #fff;
+                    #landing-btn {
+                        flex: 1;
+                        height: 100%;
                         display: flex;
                         justify-content: center;
-                        flex-direction: column;
                         align-items: center;
-                    
-                        .subheading {
-                            font-size: 34px;
-                            color: $gold;
-                            font-family: 'Dancing Script', cursive;
-                            margin-top: 100px;
-                        }
+                        background: $cta;
+                        color: #fff;
+                        font-weight: bold;
+                    }
+                }
     
-                        .landing-p {
-                            text-transform: uppercase;
-                            margin-top: 14px;
-                        }
-    
-                        .heading {
-                            text-transform: capitalize;
-                            font-size: 52px;
-                            text-align: center;
-                            margin-top: 20px;
-                        }
-    
-                        #scroll-svg {
-                            max-height: 120px;
-                            position: absolute;
-                            //bottom: 100px;
-                            margin-top: 300px;
-    
-                            #scroll-svg-dot {
-                                animation: svgDotAnimation 2s ease-in-out infinite;
+                #landing-links-wrapp {
+                    height: 50px;
+                    width: 60%;
+                    margin: 0 auto;
+                    margin-top: 100px;
+                    display: flex;
+
+                    a {
+                        flex: 1;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        i {
+                            font-size: 40px;
+                            color: #333;
+                        
+                            &:hover {
+                                color: $cta;
+                                transition: .4s;
                             }
                         }
                     }
+                }
+            }
+    
+            #landing-bg-wrapp {
+                flex: 1;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                img {
+                    height: 510px;
+                    width: 510px;
+                    position: absolute;
                 }
             }
         }
@@ -73,72 +130,125 @@
 
 @media screen and (min-width: 800px) {
     #landing {
-        height: 100vh;
-        min-height: 700px;
-        max-height: 1920px;
-        width: 100%;
+        height: 1080px;
+        min-height: 100vh;
+        background: linear-gradient(90deg, #dfebff, #f9f9f9);
     
-        #landing-bg {
+    
+    
+        #landing-wrapp {
             height: 100%;
             width: 100%;
-            background: url('../assets/Hero.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-attachment: fixed;
+            display: flex;
     
-            #landing-bg-darker {
+            #landing-content-wrapp {
+                flex: 1;
                 height: 100%;
-                width: 100%;
-                background: rgba(0, 0, 0, 0.6);
-            
-                #landing-wrapp {
-                    height: 100%;
-                    width: 100%;
-                    
-                    .header-gap {
-                        height: 100px;
+    
+                .gap {  
+                    height: 100px;
+                }
+    
+                #subheading {
+                    margin-top: 5   0px;
+                    font-family: 'Dancing Script', cursive;
+                    font-size: 32px;
+                    color: #333;
+                    z-index: 5;
+                }
+    
+                #heading {
+                    font-size: 62px;
+                    text-transform: capitalize;
+                    margin-top: 15px;
+                    z-index: 5;
+                }
+    
+                #landing-btn-wrapp {
+                    margin-top: 100px;
+                    height: 55px;
+                    width: 500px;
+                    border: 1px solid $cta;
+                    border-radius: 5px;
+                    display: flex;
+                    z-index: 5;
+    
+                    #landing-search {
+                        flex: 9;
+                        height: 100%;
+                        display: flex;
+                        color: #333;
+                        background: #ffffff;
+                        border-top-left-radius: 5px;
+                        border-bottom-left-radius: 5px;
+    
+                        #landing-search-icon {
+                            flex: 1;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100%;
+    
+                            i {
+                                font-size: 20px;
+                            }
+                        }
+    
+                        #landing-search-txt {
+                            flex: 4;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                        }
                     }
     
-                    #landing-content {
-                        width: 100%;
-                        color: #fff;
+                    #landing-btn {
+                        flex: 4;
+                        height: 100%;
                         display: flex;
                         justify-content: center;
-                        flex-direction: column;
                         align-items: center;
-                    
-                        .subheading {
-                            font-size: 48px;
-                            color: $gold;
-                            font-family: 'Dancing Script', cursive;
-                            margin-top: 250px;
-                        }
+                        background: $cta;
+                        color: #fff;
+                        font-weight: bold;
+                    }
+                }
     
-                        .landing-p {
-                            text-transform: uppercase;
-                            margin-top: 24px;
-                            font-size: 14px;
-                        }
+                #landing-links-wrapp {
+                    height: 50px;
+                    width: 220px;
+                    margin-top: 150px;
+                    display: flex;
     
-                        .heading {
-                            text-transform: capitalize;
-                            font-size: 72px;
-                            text-align: center;
-                            margin-top: 20px;
-                        }
-    
-                        #scroll-svg {
-                            max-height: 120px;
-                            position: absolute;
-                            bottom: 50px;
-                            //margin-top: 300px;
-    
-                            #scroll-svg-dot {
-                                animation: svgDotAnimation 2s ease-in-out infinite;
+                    a {
+                        flex: 1;
+                        
+                        i {
+                            font-size: 40px;
+                            color: #333;
+                        
+                            &:hover {
+                                color: $cta;
+                                transition: .4s;
                             }
                         }
                     }
+                }
+            }
+    
+            #landing-bg-wrapp {
+                flex: 1;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+    
+                img {
+                    height: 450px;
+                    width: 450px;
+                    position: absolute;
+                    margin-top: 300px;
+                    z-index: 1;
                 }
             }
         }
@@ -147,73 +257,121 @@
 
 @media screen and (min-width: 1026px) {
     #landing {
-        height: 100vh;
-        min-height: 1200px;
-        max-height: 1920px;
-        width: 100%;
+        height: 1080px;
+        min-height: 100vh;
+        background: linear-gradient(90deg, #dfebff, #f9f9f9);
     
-        #landing-bg {
+    
+    
+        #landing-wrapp {
             height: 100%;
             width: 100%;
-            background: url('../assets/Hero.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-attachment: fixed;
+            display: flex;
     
-            #landing-bg-darker {
+            #landing-content-wrapp {
+                flex: 1;
                 height: 100%;
-                width: 100%;
-                background: rgba(0, 0, 0, 0.6);
-            
-                #landing-wrapp {
-                    height: 100%;
-                    width: 100%;
-                    
-                    .header-gap {
-                        height: 100px;
+    
+                .gap {  
+                    height: 100px;
+                }
+    
+                #subheading {
+                    margin-top: 160px;
+                    font-family: 'Dancing Script', cursive;
+                    font-size: 32px;
+                    color: #333;
+                }
+    
+                #heading {
+                    font-size: 62px;
+                    text-transform: capitalize;
+                    margin-top: 15px;
+                }
+    
+                #landing-btn-wrapp {
+                    margin-top: 100px;
+                    height: 55px;
+                    width: 500px;
+                    border: 1px solid $cta;
+                    border-radius: 5px;
+                    display: flex;
+    
+                    #landing-search {
+                        flex: 9;
+                        height: 100%;
+                        display: flex;
+                        color: #333;
+                        background: #ffffff;
+                        border-top-left-radius: 5px;
+                        border-bottom-left-radius: 5px;
+    
+                        #landing-search-icon {
+                            flex: 1;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100%;
+    
+                            i {
+                                font-size: 20px;
+                            }
+                        }
+    
+                        #landing-search-txt {
+                            flex: 4;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                        }
                     }
     
-                    #landing-content {
-                        width: 100%;
-                        color: #fff;
+                    #landing-btn {
+                        flex: 4;
+                        height: 100%;
                         display: flex;
                         justify-content: center;
-                        flex-direction: column;
                         align-items: center;
-                    
-                        .subheading {
-                            font-size: 64px;
-                            color: $gold;
-                            font-family: 'Dancing Script', cursive;
-                            margin-top: 220px;
-                        }
+                        background: $cta;
+                        color: #fff;
+                        font-weight: bold;
+                    }
+                }
     
-                        .landing-p {
-                            text-transform: uppercase;
-                            margin-top: 24px;
-                            font-size: 17px;
-                        }
+                #landing-links-wrapp {
+                    height: 50px;
+                    width: 220px;
+                    margin-top: 150px;
+                    display: flex;
     
-                        .heading {
-                            text-transform: capitalize;
-                            font-size: 92px;
-                            text-align: center;
-                            margin-top: 20px;
-                            max-width: 800px;
-                        }
-    
-                        #scroll-svg {
-                            max-height: 120px;
-                            position: absolute;
-                            //bottom: 50px;
-                            margin-top: 300px;
-    
-                            #scroll-svg-dot {
-                                animation: svgDotAnimation 2s ease-in-out infinite;
+                    a {
+                        flex: 1;
+                        
+                        i {
+                            font-size: 40px;
+                            color: #333;
+                        
+                            &:hover {
+                                color: $cta;
+                                transition: .4s;
                             }
                         }
                     }
+                }
+            }
+    
+            #landing-bg-wrapp {
+                flex: 1;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+    
+                img {
+                    margin-top: -100px;
+                    height: 450px;
+                    width: 450px;
+                    position: absolute;
                 }
             }
         }
@@ -222,74 +380,123 @@
 
 @media screen and (min-width: 1240px) {
     #landing {
-        height: 100vh;
-        min-height: 1200px;
-        max-height: 1920px;
-        width: 100%;
+        height: 1080px;
+        min-height: 100vh;
+        background: linear-gradient(90deg, #dfebff, #f9f9f9);
     
-        #landing-bg {
+    
+    
+        #landing-wrapp {
             height: 100%;
             width: 100%;
-            background: url('../assets/Hero.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-attachment: fixed;
+            display: flex;
     
-            #landing-bg-darker {
+            #landing-content-wrapp {
+                flex: 1;
                 height: 100%;
-                width: 100%;
-                background: rgba(0, 0, 0, 0.6);
-            
-                #landing-wrapp {
-                    height: 100%;
-                    width: 100%;
-                    
-                    .header-gap {
-                        height: 100px;
+    
+                .gap {  
+                    height: 100px;
+                }
+    
+                #subheading {
+                    margin-top: 160px;
+                    font-family: 'Dancing Script', cursive;
+                    font-size: 32px;
+                    color: #333;
+                }
+    
+                #heading {
+                    font-size: 62px;
+                    text-transform: capitalize;
+                    margin-top: 15px;
+                }
+    
+                #landing-btn-wrapp {
+                    margin-top: 100px;
+                    height: 55px;
+                    width: 500px;
+                    border: 1px solid $cta;
+                    border-radius: 5px;
+                    display: flex;
+    
+                    #landing-search {
+                        flex: 9;
+                        height: 100%;
+                        display: flex;
+                        color: #333;
+                        background: #ffffff;
+                        border-top-left-radius: 5px;
+                        border-bottom-left-radius: 5px;
+    
+                        #landing-search-icon {
+                            flex: 1;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100%;
+    
+                            i {
+                                font-size: 20px;
+                            }
+                        }
+    
+                        #landing-search-txt {
+                            flex: 4;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                        }
                     }
     
-                    #landing-content {
-                        width: 100%;
-                        color: #fff;
+                    #landing-btn {
+                        flex: 4;
+                        height: 100%;
                         display: flex;
                         justify-content: center;
-                        flex-direction: column;
                         align-items: center;
-                    
-                        .subheading {
-                            font-size: 64px;
-                            color: $gold;
-                            font-family: 'Dancing Script', cursive;
-                            margin-top: 220px;
-                        }
+                        background: $cta;
+                        color: #fff;
+                        font-weight: bold;
+                    }
+                }
     
-                        .landing-p {
-                            text-transform: uppercase;
-                            margin-top: 24px;
-                            font-size: 17px;
-                        }
+                #landing-links-wrapp {
+                    height: 50px;
+                    width: 220px;
+                    margin-top: 150px;
+                    display: flex;
     
-                        .heading {
-                            text-transform: capitalize;
-                            font-size: 92px;
-                            text-align: center;
-                            margin-top: 20px;
-                            max-width: 800px;
-                        }
-    
-                        #scroll-svg {
-                            max-height: 120px;
-                            //bottom: 50px;
-                            margin-top: 300px;
-    
-                            #scroll-svg-dot {
-                                animation: svgDotAnimation 2s ease-in-out infinite;
+                    a {
+                        flex: 1;
+                        
+                        i {
+                            font-size: 40px;
+                            color: #333;
+                        
+                            &:hover {
+                                color: $cta;
+                                transition: .4s;
                             }
                         }
                     }
                 }
             }
+    
+            #landing-bg-wrapp {
+                flex: 1;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+    
+                img {
+                    height: 510px;
+                    width: 510px;
+                    position: absolute;
+                }
+            }
         }
     }
 }
+
