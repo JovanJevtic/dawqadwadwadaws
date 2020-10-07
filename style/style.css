@@ -430,7 +430,7 @@ header.header-scrolled nav .header-expanded ul li a {
   }
   #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content .subheading {
     font-size: 34px;
-    color: #c39d63;
+    color: #ff934a;
     font-family: 'Dancing Script', cursive;
     margin-top: 100px;
   }
@@ -502,7 +502,7 @@ header.header-scrolled nav .header-expanded ul li a {
   }
   #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content .subheading {
     font-size: 48px;
-    color: #c39d63;
+    color: #ff934a;
     font-family: 'Dancing Script', cursive;
     margin-top: 250px;
   }
@@ -575,7 +575,7 @@ header.header-scrolled nav .header-expanded ul li a {
   }
   #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content .subheading {
     font-size: 64px;
-    color: #c39d63;
+    color: #ff934a;
     font-family: 'Dancing Script', cursive;
     margin-top: 220px;
   }
@@ -649,7 +649,7 @@ header.header-scrolled nav .header-expanded ul li a {
   }
   #landing #landing-bg #landing-bg-darker #landing-wrapp #landing-content .subheading {
     font-size: 64px;
-    color: #c39d63;
+    color: #ff934a;
     font-family: 'Dancing Script', cursive;
     margin-top: 220px;
   }
@@ -1496,7 +1496,7 @@ header.header-scrolled nav .header-expanded ul li a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    border-left: 3px solid #c39d63;
+    border-left: 3px solid #ff934a;
   }
   #about #about-txt-wrapp #about-txt-container .container .about-txt-block .about-txt .about-btn a {
     height: 40px;
@@ -1696,7 +1696,7 @@ header.header-scrolled nav .header-expanded ul li a {
     font-family: 'Dancing Script', cursive;
     font-size: 32px;
     font-weight: bold;
-    color: #c39d63;
+    color: #ff934a;
   }
   #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list-heading-wrapp #menu-list-heading1 {
     margin-top: 20px;
@@ -1739,8 +1739,7 @@ header.header-scrolled nav .header-expanded ul li a {
     margin-top: 40px;
     height: 53px;
     width: 180px;
-    background: #fff;
-    background: #c39d63;
+    background: #fa751c;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1753,11 +1752,11 @@ header.header-scrolled nav .header-expanded ul li a {
     color: #000;
     color: #fff;
     font-weight: bold;
-    border: 2px solid #c39d63;
+    border: 2px solid #ff934a;
     border-radius: 25px;
   }
   #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn:hover, #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn:focus {
-    background: #c39d63;
+    background: #ff934a;
     color: #fff;
     -webkit-transition: .4s;
     transition: .4s;
@@ -2000,7 +1999,7 @@ header.header-scrolled nav .header-expanded ul li a {
     font-family: 'Dancing Script', cursive;
     font-size: 32px;
     font-weight: bold;
-    color: #c39d63;
+    color: #ff934a;
   }
   #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list-heading-wrapp #menu-list-heading2 {
     margin-top: 15px;
@@ -2041,7 +2040,7 @@ header.header-scrolled nav .header-expanded ul li a {
     height: 53px;
     width: 180px;
     background: #fff;
-    background: #c39d63;
+    background: #ff934a;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2054,11 +2053,11 @@ header.header-scrolled nav .header-expanded ul li a {
     color: #000;
     color: #fff;
     font-weight: bold;
-    border: 2px solid #c39d63;
+    border: 2px solid #ff934a;
     border-radius: 25px;
   }
   #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn:hover, #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn:focus {
-    background: #c39d63;
+    background: #ff934a;
     color: #fff;
     -webkit-transition: .4s;
     transition: .4s;
@@ -2296,7 +2295,7 @@ header.header-scrolled nav .header-expanded ul li a {
     font-family: 'Dancing Script', cursive;
     font-size: 32px;
     font-weight: bold;
-    color: #c39d63;
+    color: #ff934a;
   }
   #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list {
     height: 800px;
@@ -2372,7 +2371,7 @@ header.header-scrolled nav .header-expanded ul li a {
     height: 53px;
     width: 180px;
     background: #fff;
-    background: #c39d63;
+    background: #ff934a;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2385,11 +2384,11 @@ header.header-scrolled nav .header-expanded ul li a {
     color: #000;
     color: #fff;
     font-weight: bold;
-    border: 2px solid #c39d63;
+    border: 2px solid #ff934a;
     border-radius: 25px;
   }
   #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn:hover, #menu #menu-wrapp #menu-bg .container #menu-container #menu-content-wrapp #menu-content .menu-part .menu-list #menu-btn:focus {
-    background: #c39d63;
+    background: #ff934a;
     color: #fff;
     -webkit-transition: .4s;
     transition: .4s;
@@ -2845,12 +2844,12 @@ header.header-scrolled nav .header-expanded ul li a {
 }
 
 ::-moz-selection {
-  background: #c39d63;
+  background: #ff934a;
   color: #f0f0f0;
 }
 
 ::selection {
-  background: #c39d63;
+  background: #ff934a;
   color: #f0f0f0;
 }
 
