@@ -557,8 +557,7 @@ header.header-scrolled nav .header-expanded ul li a {
             justify-content: center;
   }
   #landing #landing-wrapp #landing-bg-wrapp img {
-    height: 510px;
-    width: 510px;
+    width: 100%;
     position: absolute;
   }
 }
