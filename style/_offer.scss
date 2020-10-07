@@ -1,4 +1,4 @@
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 799px) {
     #offer {
         height: 1650px;
         width: 100%;
@@ -202,7 +202,7 @@
     }
 }
 
-@media screen and (min-width: 1026px) { 
+@media (max-width: 1239px) and (min-width: 800px) { 
     #offer {
         height: 800px;
         width: 100%;
@@ -293,26 +293,29 @@
                     height: 400px;
                     width: 100%;
                     background: $darkGrey;
+                    display: flex;
+                    justify-content: center;
+                    letter-spacing: 30px;
     
                     p {
                         color: $grey;
-                        font-size: 220px;
+                        font-size: 170px;
                         font-family: 'Lobster', cursive;
                         //position: static;
-                        bottom: 80px;
                         z-index: 1;
                         //display: none;
+                        margin-top: -60px;
                     }
     
                     i {
+                        bottom: 200px;
                         color: $grey;
-                        font-size: 220px;
+                        font-size: 170px;
                         font-family: 'Lobster', cursive;
-                        //position: static;
-                        bottom: 80px;
+                        //position: static
                         z-index: 1;
                         //display: none;
-                        margin-top: 100px;
+                        margin-top: 00px;
                     }
                 }
             }
@@ -351,6 +354,7 @@
                                 width: 200px;
                                 border-radius: 50%;
                                 box-shadow: 2px 4px 15px #3e3e3e;
+                                z-index: 5;
                                 
                                 img {
                                     height: 100%;
@@ -482,26 +486,25 @@
                     height: 400px;
                     width: 100%;
                     background: $darkGrey;
+                    display: flex;
+                    justify-content: center;
+                    letter-spacing: 60px;
     
                     p {
                         color: $grey;
-                        font-size: 220px;
+                        font-size: 270px;
                         font-family: 'Lobster', cursive;
-                        //position: static;
-                        bottom: 80px;
                         z-index: 1;
                         //display: none;
+                        margin-top: -70px;
                     }
     
                     i {
                         color: $grey;
-                        font-size: 220px;
+                        font-size: 270px;
                         font-family: 'Lobster', cursive;
-                        //position: static;
-                        bottom: 80px;
                         z-index: 1;
                         //display: none;
-                        margin-top: 100px;
                     }
                 }
             }
@@ -540,6 +543,7 @@
                                 width: 270px;
                                 border-radius: 50%;
                                 box-shadow: 2px 4px 15px #3e3e3e;
+                                z-index: 5;
                                 
                                 img {
                                     height: 100%;
@@ -551,6 +555,7 @@
                         }
     
                         .offer-card-txt-wrapp {
+                            z-index: 5;
                             flex: 1;
                             display: flex;
                             align-items: center;
