@@ -107,7 +107,7 @@
   header nav .logo-wrapp .logo {
     font-size: 38px;
     font-family: 'Dancing Script', cursive;
-    color: #fff;
+    color: #000;
     font-weight: bold;
   }
   header nav .menu-wrapp {
@@ -146,7 +146,7 @@
   header nav .menu-wrapp .hamburger .line {
     height: 2px;
     width: 26px;
-    background: #f0f0f0;
+    background: #000;
   }
   header nav .menu-wrapp .hamburger.hamburger-active .line:nth-child(1) {
     -webkit-transform: rotate(50deg) translateY(15px);
@@ -383,170 +383,643 @@ header.header-scrolled nav .header-expanded ul li a {
   }
 }
 
-#landing {
-  height: 1080px;
-  min-height: 100vh;
-  background: -webkit-gradient(linear, left top, right top, from(#dfebff), to(#f9f9f9));
-  background: linear-gradient(90deg, #dfebff, #f9f9f9);
+@media screen and (max-width: 799px) {
+  #landing {
+    height: 1380px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#dfebff), to(#f9f9f9));
+    background: linear-gradient(180deg, #dfebff, #f9f9f9);
+    width: 100%;
+  }
+  #landing #landing-wrapp {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #landing #landing-wrapp #landing-content-wrapp {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #landing #landing-wrapp #landing-content-wrapp .gap {
+    height: 100px;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #subheading {
+    margin-top: 40px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    color: #333;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #heading {
+    text-align: center;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-top: 25px;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp {
+    margin-top: 100px;
+    height: 110px;
+    width: 300px;
+    border: 1px solid #720a64;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #333;
+    background: #ffffff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search #landing-search-icon {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search #landing-search-icon i {
+    font-size: 20px;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search #landing-search-txt {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-btn {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #720a64;
+    color: #fff;
+    font-weight: bold;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp {
+    height: 50px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp a {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp a i {
+    font-size: 40px;
+    color: #333;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp a i:hover {
+    color: #720a64;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  #landing #landing-wrapp #landing-bg-wrapp {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #landing #landing-wrapp #landing-bg-wrapp img {
+    height: 510px;
+    width: 510px;
+    position: absolute;
+  }
 }
 
-#landing #landing-wrapp {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 800px) {
+  #landing {
+    height: 1080px;
+    min-height: 100vh;
+    background: -webkit-gradient(linear, left top, right top, from(#dfebff), to(#f9f9f9));
+    background: linear-gradient(90deg, #dfebff, #f9f9f9);
+  }
+  #landing #landing-wrapp {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #landing #landing-wrapp #landing-content-wrapp {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: 100%;
+  }
+  #landing #landing-wrapp #landing-content-wrapp .gap {
+    height: 100px;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #subheading {
+    margin-top: 5   0px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    color: #333;
+    z-index: 5;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #heading {
+    font-size: 62px;
+    text-transform: capitalize;
+    margin-top: 15px;
+    z-index: 5;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp {
+    margin-top: 100px;
+    height: 55px;
+    width: 500px;
+    border: 1px solid #720a64;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 5;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search {
+    -webkit-box-flex: 9;
+        -ms-flex: 9;
+            flex: 9;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #333;
+    background: #ffffff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search #landing-search-icon {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search #landing-search-icon i {
+    font-size: 20px;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search #landing-search-txt {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-btn {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #720a64;
+    color: #fff;
+    font-weight: bold;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp {
+    height: 50px;
+    width: 220px;
+    margin-top: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp a {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp a i {
+    font-size: 40px;
+    color: #333;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp a i:hover {
+    color: #720a64;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  #landing #landing-wrapp #landing-bg-wrapp {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #landing #landing-wrapp #landing-bg-wrapp img {
+    height: 450px;
+    width: 450px;
+    position: absolute;
+    margin-top: 300px;
+    z-index: 1;
+  }
 }
 
-#landing #landing-wrapp #landing-content-wrapp {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  height: 100%;
+@media screen and (min-width: 1026px) {
+  #landing {
+    height: 1080px;
+    min-height: 100vh;
+    background: -webkit-gradient(linear, left top, right top, from(#dfebff), to(#f9f9f9));
+    background: linear-gradient(90deg, #dfebff, #f9f9f9);
+  }
+  #landing #landing-wrapp {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #landing #landing-wrapp #landing-content-wrapp {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: 100%;
+  }
+  #landing #landing-wrapp #landing-content-wrapp .gap {
+    height: 100px;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #subheading {
+    margin-top: 160px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    color: #333;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #heading {
+    font-size: 62px;
+    text-transform: capitalize;
+    margin-top: 15px;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp {
+    margin-top: 100px;
+    height: 55px;
+    width: 500px;
+    border: 1px solid #720a64;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search {
+    -webkit-box-flex: 9;
+        -ms-flex: 9;
+            flex: 9;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #333;
+    background: #ffffff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search #landing-search-icon {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search #landing-search-icon i {
+    font-size: 20px;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search #landing-search-txt {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-btn {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #720a64;
+    color: #fff;
+    font-weight: bold;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp {
+    height: 50px;
+    width: 220px;
+    margin-top: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp a {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp a i {
+    font-size: 40px;
+    color: #333;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp a i:hover {
+    color: #720a64;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  #landing #landing-wrapp #landing-bg-wrapp {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #landing #landing-wrapp #landing-bg-wrapp img {
+    margin-top: -100px;
+    height: 450px;
+    width: 450px;
+    position: absolute;
+  }
 }
 
-#landing #landing-wrapp #landing-content-wrapp .gap {
-  height: 100px;
-}
-
-#landing #landing-wrapp #landing-content-wrapp #subheading {
-  margin-top: 160px;
-  font-family: 'Dancing Script', cursive;
-  font-size: 32px;
-  color: #333;
-}
-
-#landing #landing-wrapp #landing-content-wrapp #heading {
-  font-size: 62px;
-  text-transform: capitalize;
-  margin-top: 15px;
-}
-
-#landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp {
-  margin-top: 100px;
-  height: 55px;
-  width: 500px;
-  border: 1px solid #720a64;
-  border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search {
-  -webkit-box-flex: 9;
-      -ms-flex: 9;
-          flex: 9;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #333;
-  background: #ffffff;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
-#landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search #landing-search-icon {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-}
-
-#landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search #landing-search-icon i {
-  font-size: 20px;
-}
-
-#landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search #landing-search-txt {
-  -webkit-box-flex: 4;
-      -ms-flex: 4;
-          flex: 4;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-btn {
-  -webkit-box-flex: 4;
-      -ms-flex: 4;
-          flex: 4;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #720a64;
-  color: #fff;
-  font-weight: bold;
-}
-
-#landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp {
-  height: 50px;
-  width: 220px;
-  margin-top: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp a {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-#landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp a i {
-  font-size: 40px;
-  color: #333;
-}
-
-#landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp a i:hover {
-  color: #720a64;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-#landing #landing-wrapp #landing-bg-wrapp {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-#landing #landing-wrapp #landing-bg-wrapp img {
-  height: 510px;
-  width: 510px;
-  position: absolute;
+@media screen and (min-width: 1240px) {
+  #landing {
+    height: 1080px;
+    min-height: 100vh;
+    background: -webkit-gradient(linear, left top, right top, from(#dfebff), to(#f9f9f9));
+    background: linear-gradient(90deg, #dfebff, #f9f9f9);
+  }
+  #landing #landing-wrapp {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #landing #landing-wrapp #landing-content-wrapp {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: 100%;
+  }
+  #landing #landing-wrapp #landing-content-wrapp .gap {
+    height: 100px;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #subheading {
+    margin-top: 160px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    color: #333;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #heading {
+    font-size: 62px;
+    text-transform: capitalize;
+    margin-top: 15px;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp {
+    margin-top: 100px;
+    height: 55px;
+    width: 500px;
+    border: 1px solid #720a64;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search {
+    -webkit-box-flex: 9;
+        -ms-flex: 9;
+            flex: 9;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #333;
+    background: #ffffff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search #landing-search-icon {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search #landing-search-icon i {
+    font-size: 20px;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-search #landing-search-txt {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-btn-wrapp #landing-btn {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #720a64;
+    color: #fff;
+    font-weight: bold;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp {
+    height: 50px;
+    width: 220px;
+    margin-top: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp a {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp a i {
+    font-size: 40px;
+    color: #333;
+  }
+  #landing #landing-wrapp #landing-content-wrapp #landing-links-wrapp a i:hover {
+    color: #720a64;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  #landing #landing-wrapp #landing-bg-wrapp {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #landing #landing-wrapp #landing-bg-wrapp img {
+    height: 510px;
+    width: 510px;
+    position: absolute;
+  }
 }
 
 @media screen and (max-width: 799px) {
