@@ -386,8 +386,7 @@ header.header-scrolled nav .header-expanded ul li a {
 @media screen and (max-width: 799px) {
   #landing {
     height: 1380px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#dfebff), to(#f9f9f9));
-    background: linear-gradient(180deg, #dfebff, #f9f9f9);
+    background: #f9f9f9;
     width: 100%;
   }
   #landing #landing-wrapp {
@@ -874,8 +873,7 @@ header.header-scrolled nav .header-expanded ul li a {
   #landing {
     height: 1080px;
     min-height: 100vh;
-    background: -webkit-gradient(linear, left top, right top, from(#dfebff), to(#f9f9f9));
-    background: linear-gradient(90deg, #dfebff, #f9f9f9);
+    background: #fff;
   }
   #landing #landing-wrapp {
     height: 100%;
@@ -1015,9 +1013,11 @@ header.header-scrolled nav .header-expanded ul li a {
             justify-content: flex-end;
   }
   #landing #landing-wrapp #landing-bg-wrapp img {
-    height: 510px;
-    width: 510px;
+    height: 710px;
+    width: 710px;
     position: absolute;
+    right: -100px;
+    margin-top: 20px;
   }
 }
 
