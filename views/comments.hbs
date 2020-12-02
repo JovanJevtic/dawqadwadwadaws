@@ -7,3 +7,13 @@
         <li> {{formatDate date 'DD/MM/YYYY'}} </li>
     {{/each}}
 </ul>   
+
+<form action="/comments" method="POST" type="application/json">
+    <label for="name">Ime</label>
+    <input type="text" name="name" id="name" required>
+
+    <label for="txt">Komentar</label>
+    <input type="text" name="txt" id="txt" required>
+
+    <button type="submit">Potvrdi</button>
+</form>

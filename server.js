@@ -21,6 +21,7 @@ app.engine('.hbs', exphbs({helpers: { formatDate }, defaultLayout: 'main', extna
 app.set('view engine', '.hbs');
 
 //* Body-parser
+app.use(express.urlencoded({ extended: false }))
 app.use(express.json());
 
 //* Static folder

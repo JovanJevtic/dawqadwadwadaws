@@ -26,13 +26,14 @@ router.post('/comments', async (req, res) => {
     const review = new Review({
         name: req.body.name,
         txt: req.body.txt
-      });
-      try {
+    });
+    try {
+        console.log(req.body)
         const newReview = await review.save()
         res.status(201).json(newReview);
-      } catch (err) {
+    } catch (err) {
         res.status(400).json({ message: err.message });
-      }
+    }
 });
 
 router.get('/contact', (req, res) => {
