@@ -16,7 +16,7 @@ router.get('/menu', (req, res) => {
 });
 
 router.get('/comments', async (req, res) => {
-    const reviews = await Review.find();
+    const reviews = await Review.find().lean();
     res.render('comments', {
         reviews
     });

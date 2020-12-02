@@ -1,2 +1,9 @@
 <h1>Comments</h1>
-{{reviews}}
+
+<ul>
+    {{#each reviews}}
+        <li> {{name}} </li>
+        <li> {{txt}} </li>
+        <li> {{formatDate date 'DD/MM/YYYY'}} </li>
+    {{/each}}
+</ul>   
