@@ -8,8 +8,8 @@ const dotenv = require('dotenv').config({ path: './.env' });
 const app = express();
 
 //* Handlebars
-app.engine('handlebars', exphbs({ defaultLayout: 'main', extname: '.hbs', }));
-app.set('view engine', 'handlebars');
+app.engine('.hbs', exphbs({ defaultLayout: 'main', extname: '.hbs', }));
+app.set('view engine', '.hbs');
 
 //* Body-parser
 app.use(express.json());
