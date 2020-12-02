@@ -1,11 +1,18 @@
 const express = require('express');
-const mognoose = require('mongoose');
+const mongoose = require('mongoose');
 const exphbs = require('express-handlebars');
 const path = require('path');
-const dotenv = require('dotenv').config({ path: './.env' });
+if (process.env.NODE_ENV !== 'production') require('dotenv').config({ path: './.env' });
 
 //* App
 const app = express();
+
+//* Database connection
+mongoose.connect( process.env.DB_URI , {useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true});
+const db = mongoose.connection;
+
+db.on('error', (error) => console.error(error));
+db.once('open', () => console.log('Connected to Database'));
 
 //* Handlebars
 app.engine('.hbs', exphbs({ defaultLayout: 'main', extname: '.hbs', }));

@@ -6,7 +6,7 @@ const scroll = () => {
     dots.forEach(dot => {
       dot.addEventListener('click', () => {
         const link = dot.getAttribute('data-href');
-        window.location.href = `http://localhost:5500/${link}`;
+        window.location.href = `http://localhost:5000/${link}`;
       });
     })
     
