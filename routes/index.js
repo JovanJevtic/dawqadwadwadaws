@@ -28,11 +28,15 @@ router.post('/comments', async (req, res) => {
         txt: req.body.txt
     });
     try {
-        console.log(req.body)
         const newReview = await review.save()
-        res.status(201).json(newReview);
+        //res.status(201).json(newReview);
+        res.redirect('/comments')
     } catch (err) {
-        res.status(400).json({ message: err.message });
+        const reviews = await Review.find().lean();
+        res.render('comments', {
+            reviews,
+            err: 'Komentar sa ovim imenom vec postoji'
+        })
     }
 });
 
