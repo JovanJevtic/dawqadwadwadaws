@@ -12,7 +12,7 @@ const transition = () => {
             .to(".opening-scene", { y: '100%', opacity: 0 , duration: .5 })
             .to('.cover-bar', { y: '-100%', duration: 1, stagger: 0.25, delay: .4 })
     } else {
-        tl2.to('.cover-bar', { y: '-100%', duration: 1, stagger: 0.25, delay: 0 })
+        tl2.to('.cover-bar', { y: '-100%', duration: 1, stagger: 0.25, delay: 0.15 })
     }
 
     tl.from('#heading', { y: 50, opacity: 0 , duration: .5, delay: 3.5 })

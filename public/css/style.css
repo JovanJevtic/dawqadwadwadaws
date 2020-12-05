@@ -34,9 +34,9 @@ p, a {
       -ms-flex-direction: column;
           flex-direction: column;
   z-index: 10;
-  height: 220px;
+  height: 250px;
   background: #4A4A4A;
-  width: 50px;
+  width: 60px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -193,14 +193,14 @@ p, a {
   color: #333;
   opacity: 1;
   margin-top: 180px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #home #home-section1 .home-section1-wrapp #heading {
   margin-top: 20px;
-  font-size: 46px;
+  font-size: 48px;
   font-weight: bold;
-  line-height: 55px;
+  line-height: 60px;
   z-index: 1000;
 }
 
