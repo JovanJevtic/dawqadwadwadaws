@@ -96,27 +96,29 @@ p, a {
 #home .absolute .bg-text1 {
   position: absolute;
   font-family: 'Castoro', sans-serif;
-  font-size: 110px;
+  font-size: 150px;
   opacity: 0.1;
   top: 95px;
-  right: 220px;
+  right: 120px;
   z-index: 1;
+  display: none;
 }
 
 #home .absolute .bg-text2 {
   position: absolute;
   font-family: 'Castoro', sans-serif;
-  font-size: 110px;
+  font-size: 150px;
   opacity: 0.1;
-  bottom: 150px;
-  left: 570px;
+  bottom: 100px;
+  left: 270px;
+  display: none;
 }
 
 #home .absolute .footer-block {
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 140px;
+  height: 135px;
   width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -182,6 +184,7 @@ p, a {
   background: linear-gradient(280deg, #FBBBBC, #F9CBB0);
   background: #FB938F;
   background: linear-gradient(280deg, #FB938F, #FBBBBC);
+  background: #fff;
 }
 
 #home #home-section1 .home-section1-wrapp {
@@ -241,20 +244,17 @@ p, a {
 
 #home #home-section1 .home-section1-wrapp .landing-btns {
   height: 120px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 450px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 80px;
+  margin-top: 50px;
   z-index: 5;
 }
 
 #home #home-section1 .home-section1-wrapp .landing-btns .landing-cta {
   height: 50px;
-  width: 200px;
+  width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,8 +265,10 @@ p, a {
       justify-content: space-around;
   color: #fff;
   text-decoration: none;
-  border-left: 2px solid #fff;
-  background: #000;
+  background: #0949dd;
+  background: #c75879;
+  -webkit-box-shadow: 1px 3px 5px #c75879;
+          box-shadow: 1px 3px 5px #c75879;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -275,52 +277,13 @@ p, a {
   font-weight: bold;
 }
 
-#home #home-section1 .home-section1-wrapp .landing-btns .landing-cta i {
-  font-size: 24px;
-}
-
 #home #home-section1 .home-section1-wrapp .landing-btns .landing-cta:hover {
-  background: #fff;
-  color: #000;
-  border-left: 2px solid #000;
-}
-
-#home #home-section1 .home-section1-wrapp .landing-btns .landing-cta2 {
-  height: 50px;
-  width: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  color: #000;
-  text-decoration: none;
-  border-left: 2px solid #4A4A4A;
-  background: #fafafa;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-#home #home-section1 .home-section1-wrapp .landing-btns .landing-cta2 p {
-  font-weight: bold;
-}
-
-#home #home-section1 .home-section1-wrapp .landing-btns .landing-cta2 i {
-  font-size: 24px;
-}
-
-#home #home-section1 .home-section1-wrapp .landing-btns .landing-cta2:hover {
-  background: rgba(255, 255, 255, 0.85);
-  background: #000;
-  color: #fff;
-  border-left: 2px solid #fff;
+  -webkit-box-shadow: 3px 5px 10px #c75879;
+          box-shadow: 3px 5px 10px #c75879;
 }
 
 #home #home-section1 .home-section1-wrapp .footer-txt {
-  margin-top: 160px;
+  margin-top: 190px;
   height: 100px;
   width: 100%;
 }
@@ -347,6 +310,7 @@ p, a {
 #home #home-section2 {
   width: 40%;
   background: #fff;
+  background: linear-gradient(280deg, #FB938F, #FBBBBC);
 }
 
 #home #home-section2 .home-section2-wrapp {
