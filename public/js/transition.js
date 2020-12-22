@@ -5,14 +5,23 @@ const transition = () => {
     const rule = CSSRulePlugin.getRule('.span-landing:after')
 
     const openingScene = document.getElementsByClassName('opening-scene');
+    const isMobile = window.innerWidth < 768;
 
     if (openingScene.length > 0) {
         tl2.to(".text", { y: "0%", duration: .7, stagger: 0.35 })
-            .to(".opening-scene", { scale: 1.5, duration: .5 })
-            .to(".opening-scene", { y: '100%', opacity: 0 , duration: .5 })
-            .to('.cover-bar', { y: '-100%', duration: 1, stagger: 0.25, delay: .4 })
+            //.to(".opening-scene", { scale: 1.5, duration: .5 })
+            .to(".opening-scene", {  opacity: 0 , duration: .5 })
+        if (isMobile) {
+            tl2.to('.cover-bar', { x: '100%', duration: 1, stagger: 0.25, delay: .3 })
+        } else {
+            tl2.to('.cover-bar', { opacity: 0, duration: 1, stagger: 0.25, delay: .4 })
+        }
     } else {
-        tl2.to('.cover-bar', { y: '-100%', duration: 1, stagger: 0.25, delay: 0.15 })
+        if (isMobile) {
+            tl2.to('.cover-bar', { x: '100%', duration: 1, stagger: 0.25, delay: 0.3 })
+        } else {
+            tl2.to('.cover-bar', { y: '-100%', duration: 1, stagger: 0.25, delay: 0.15 })
+        }
     }
 
     tl.from('#heading', { y: 50, opacity: 0 , duration: .5, delay: 3.5 })
