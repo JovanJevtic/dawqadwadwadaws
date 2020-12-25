@@ -118,12 +118,11 @@ p, a {
     pointer-events: none;
 
     #center-img {
-        left: 240px;
+        left: -240px;
         position: absolute;
         width: 500px;
         //height: 500px;
-        top: 50%;
-        transform: translateY(-50%);
+        bottom: -300px;
         z-index: 5;
     }
 
@@ -141,10 +140,12 @@ p, a {
 
         .links {
             flex: 1;
+            display: flex;
+            justify-content: flex-end;
             
             ul {
                 height: 100%;
-                width: 140px;
+                width: 100px;
                 list-style: none;
                 display: flex;
                 align-items: center;
@@ -154,7 +155,7 @@ p, a {
                     a {
                         text-decoration: none;
                         color: #333;
-                        font-size: 24px;
+                        font-size: 16px;
                     }
                 }
             }
@@ -227,22 +228,26 @@ p, a {
 }
 
 #subheading {
-    margin-top: 110px;
+    margin-top: 50px;
     font-size: 14px;
+    text-align: center;
 }
 
 #heading {
+    text-align: center;
     font-size: 28px;
     line-height: 40px;
-    max-width: 200px;
 }
 
 .landing-btns {
     height: 120px;
-    width: 250px;
+    width: 100%;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 40px;
     z-index: 5;
+    flex-direction: column;
 
     .landing-cta {
         height: 45px;
@@ -265,6 +270,29 @@ p, a {
         &:hover {
             opacity: 1;
             box-shadow: 2px 4px 6px #c75879;
+        }
+    }
+
+    .landing-cta2 {
+        height: 45px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: #c75879;
+        color: #000;
+        text-decoration: none;
+        transition: .4s;
+
+        p {
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            width: 80px;
+
+            i {
+                color: #c75879;
+            }
         }
     }
 }
