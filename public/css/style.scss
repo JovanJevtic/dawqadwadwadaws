@@ -83,7 +83,7 @@ p, a {
         h1 {
             background: black;
             overflow: hidden;
-            font-size: 44px;
+            font-size: 36px;
             font-weight: bold;
 
             span {
@@ -122,7 +122,7 @@ p, a {
         position: absolute;
         width: 500px;
         //height: 500px;
-        bottom: -300px;
+        bottom: -250px;
         z-index: 5;
     }
 
@@ -136,7 +136,7 @@ p, a {
         width: 100%;
         display: flex;
         align-items: center;
-        height: 50px;
+        height: 150px;
 
         .links {
             flex: 1;

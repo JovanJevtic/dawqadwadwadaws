@@ -100,7 +100,7 @@ p, a {
 .opening-scene .text-wrapp h1 {
   background: black;
   overflow: hidden;
-  font-size: 44px;
+  font-size: 36px;
   font-weight: bold;
 }
 
@@ -139,7 +139,7 @@ p, a {
   left: -240px;
   position: absolute;
   width: 500px;
-  bottom: -300px;
+  bottom: -250px;
   z-index: 5;
 }
 
@@ -157,7 +157,7 @@ p, a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 50px;
+  height: 150px;
 }
 
 .absolute .footer-block .links {
