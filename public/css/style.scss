@@ -136,7 +136,7 @@ p, a {
         width: 100%;
         display: flex;
         align-items: center;
-        height: 200px;
+        height: 190px;
 
         .links {
             flex: 1;
@@ -144,6 +144,7 @@ p, a {
             justify-content: flex-end;
             
             ul {
+                margin-right: 30px;
                 height: 100%;
                 width: 100px;
                 list-style: none;
@@ -155,7 +156,7 @@ p, a {
                     a {
                         text-decoration: none;
                         color: #333;
-                        font-size: 18px;
+                        font-size: 20px;
                     }
                 }
             }
@@ -247,7 +248,7 @@ p, a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 60px;
     z-index: 5;
     flex-direction: column;
 
