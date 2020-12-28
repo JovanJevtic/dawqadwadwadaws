@@ -124,6 +124,7 @@ p, a {
         //height: 500px;
         bottom: -200px;
         z-index: 5;
+        transform: rotate(200deg);
     }
 
     .bg-text1, .bg-text2 {
@@ -477,6 +478,7 @@ p, a {
                     opacity: 1;
                     margin-top: 180px;
                     font-size: 18px;
+                    text-align: left;
                 }
     
                 #heading {
@@ -486,15 +488,18 @@ p, a {
                     line-height: 60px;
                     z-index: 1000;
                     max-width: 600px;
+                    text-align: left;
                 }
     
                 .landing-btns {
                     height: 120px;
-                    width: 450px;
+                    width: 480px;
                     justify-content: space-between;
                     margin-top: 50px;
                     z-index: 5;
-        
+                    display: flex;
+                    flex-direction: row;
+
                     .landing-cta {
                         height: 50px;
                         width: 250px;
@@ -526,6 +531,7 @@ p, a {
                     height: 100px;
                     width: 60%;
                     bottom: 15px;
+                    display: flex;
     
                     ul {
                         list-style: none;
