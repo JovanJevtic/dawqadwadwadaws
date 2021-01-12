@@ -12,7 +12,7 @@ a {
 }
 
 .container {
-  max-width: 340px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -137,7 +137,7 @@ header nav .hamburger-menu-wrapp .hamburger-menu .line {
 }
 
 .subheading {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 400;
   color: #797878;
   letter-spacing: 3.4px;
@@ -146,14 +146,14 @@ header nav .hamburger-menu-wrapp .hamburger-menu .line {
 .heading {
   z-index: 10;
   margin-top: 1vh;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 600;
   line-height: 42px;
 }
 
 .cta1, .cta2 {
-  height: 42px;
-  width: 152px;
+  height: 47px;
+  width: 170px;
   color: #fff;
   text-decoration: none;
   display: -webkit-box;
