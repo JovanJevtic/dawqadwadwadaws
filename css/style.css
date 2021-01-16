@@ -161,6 +161,7 @@ header nav .hamburger-menu-wrapp .hamburger-menu.mobile-nav-active .line {
   font-weight: 600;
   line-height: 42px;
   max-width: 300px;
+  font-family: 'Bodoni Moda', serif;
   font-weight: bold;
 }
 
@@ -193,8 +194,6 @@ header nav .hamburger-menu-wrapp .hamburger-menu.mobile-nav-active .line {
   background: black;
   margin-top: 7vh;
   background: #000;
-  background: -webkit-gradient(linear, left top, right top, from(#7f1492), to(#d012d6));
-  background: linear-gradient(90deg, #7f1492, #d012d6);
 }
 
 .cta1:hover {

@@ -15,8 +15,8 @@ const header = () => {
     links.forEach(link => { 
         link.addEventListener('click', () => {
             toggleClasses();
-        })
-    })
+        });
+    });
 
 }
 
