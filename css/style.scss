@@ -125,10 +125,12 @@ header {
 .heading {
     z-index: 10;
     margin-top: 1vh;
-    font-size: 26px;
+    font-size: 32px;
     font-weight: 600;
     line-height: 42px;
     max-width: 300px;
+    font-family: 'Bodoni Moda', serif;
+    font-weight: bold;
 }
 
 .cta1, .cta2 {
@@ -151,8 +153,10 @@ header {
 
 .cta1 {
     background: $colorBlack;
-    margin-top: 9vh;
-    
+    margin-top: 7vh;
+    background: #000;
+    background: linear-gradient(90deg, rgb(80, 11, 92), rgb(208, 18, 214));
+
     &:hover {
         background: rgb(17, 17, 17);
     }
@@ -161,6 +165,7 @@ header {
 .cta2 {
     color: #000;
     border: 2px solid #000;
+    border: 2px solid linear-gradient(90deg, rgb(80, 11, 92), rgb(208, 18, 214));
     margin-top: 4vh;
     background: $colorBeageu;
     

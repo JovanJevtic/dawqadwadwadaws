@@ -151,10 +151,12 @@ header nav .hamburger-menu-wrapp .hamburger-menu .line {
 .heading {
   z-index: 10;
   margin-top: 1vh;
-  font-size: 26px;
+  font-size: 32px;
   font-weight: 600;
   line-height: 42px;
   max-width: 300px;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: bold;
 }
 
 .cta1, .cta2 {
@@ -184,7 +186,10 @@ header nav .hamburger-menu-wrapp .hamburger-menu .line {
 
 .cta1 {
   background: black;
-  margin-top: 9vh;
+  margin-top: 7vh;
+  background: #000;
+  background: -webkit-gradient(linear, left top, right top, from(#500b5c), to(#d012d6));
+  background: linear-gradient(90deg, #500b5c, #d012d6);
 }
 
 .cta1:hover {
@@ -194,6 +199,7 @@ header nav .hamburger-menu-wrapp .hamburger-menu .line {
 .cta2 {
   color: #000;
   border: 2px solid #000;
+  border: 2px solid linear-gradient(90deg, #500b5c, #d012d6);
   margin-top: 4vh;
   background: #faf9f7;
 }
