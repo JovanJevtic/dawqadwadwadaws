@@ -70,6 +70,23 @@ header {
                     .line {
                         background: $colorWhite; 
                     }
+
+                    .line:nth-child(1) {
+                        transform: rotate(55deg) translateY(15px);
+                        transition: 0.6s;
+                        transform-origin: bottom;
+                        height: 2px;
+                    }
+
+                    .line:nth-child(2) {
+                        opacity: 0;
+                    }
+
+                    .line:nth-child(3) {
+                        transform: rotate(-55deg) translateY(-15px);
+                        transition: 0.6s;
+                        height: 2px;
+                    }
                 }
             }
         }   
@@ -225,9 +242,9 @@ header {
     height: 100%;
     width: 75%;
     background: rgb(12, 12, 12);
-    right: 0;
+    right: -500px;
     z-index: 1;
-    display: none;
+    transition: all .8s;
 
     ul {
         list-style: none;
@@ -254,5 +271,6 @@ header {
 
     &.mobile-nav-open {
         display: flex;
+        right: 0;
     }
 }

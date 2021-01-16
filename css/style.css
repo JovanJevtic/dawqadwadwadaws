@@ -100,6 +100,28 @@ header nav .hamburger-menu-wrapp .hamburger-menu.mobile-nav-active .line {
   background: #fff;
 }
 
+header nav .hamburger-menu-wrapp .hamburger-menu.mobile-nav-active .line:nth-child(1) {
+  -webkit-transform: rotate(55deg) translateY(15px);
+          transform: rotate(55deg) translateY(15px);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  height: 2px;
+}
+
+header nav .hamburger-menu-wrapp .hamburger-menu.mobile-nav-active .line:nth-child(2) {
+  opacity: 0;
+}
+
+header nav .hamburger-menu-wrapp .hamburger-menu.mobile-nav-active .line:nth-child(3) {
+  -webkit-transform: rotate(-55deg) translateY(-15px);
+          transform: rotate(-55deg) translateY(-15px);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  height: 2px;
+}
+
 .header-gap {
   height: 8vh;
 }
@@ -259,9 +281,10 @@ header nav .hamburger-menu-wrapp .hamburger-menu.mobile-nav-active .line {
   height: 100%;
   width: 75%;
   background: #0c0c0c;
-  right: 0;
+  right: -500px;
   z-index: 1;
-  display: none;
+  -webkit-transition: all .8s;
+  transition: all .8s;
 }
 
 .mobile-nav-wrapp ul {
@@ -306,5 +329,6 @@ header nav .hamburger-menu-wrapp .hamburger-menu.mobile-nav-active .line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  right: 0;
 }
 /*# sourceMappingURL=style.css.map */
