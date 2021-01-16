@@ -86,12 +86,18 @@ header nav .hamburger-menu-wrapp .hamburger-menu {
       -ms-flex-pack: justify;
           justify-content: space-between;
   cursor: pointer;
+  z-index: 50;
 }
 
 header nav .hamburger-menu-wrapp .hamburger-menu .line {
   height: 1px;
   width: 30px;
   background: black;
+  z-index: 200;
+}
+
+header nav .hamburger-menu-wrapp .hamburger-menu.mobile-nav-active .line {
+  background: #fff;
 }
 
 .header-gap {
@@ -151,11 +157,10 @@ header nav .hamburger-menu-wrapp .hamburger-menu .line {
 .heading {
   z-index: 10;
   margin-top: 1vh;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 600;
   line-height: 42px;
   max-width: 300px;
-  font-family: 'Bodoni Moda', serif;
   font-weight: bold;
 }
 
@@ -188,8 +193,8 @@ header nav .hamburger-menu-wrapp .hamburger-menu .line {
   background: black;
   margin-top: 7vh;
   background: #000;
-  background: -webkit-gradient(linear, left top, right top, from(#500b5c), to(#d012d6));
-  background: linear-gradient(90deg, #500b5c, #d012d6);
+  background: -webkit-gradient(linear, left top, right top, from(#7f1492), to(#d012d6));
+  background: linear-gradient(90deg, #7f1492, #d012d6);
 }
 
 .cta1:hover {
@@ -248,5 +253,59 @@ header nav .hamburger-menu-wrapp .hamburger-menu .line {
 
 .social-links ul li a :hover {
   color: #000;
+}
+
+.mobile-nav-wrapp {
+  position: fixed;
+  height: 100%;
+  width: 75%;
+  background: #0c0c0c;
+  right: 0;
+  z-index: 1;
+  display: none;
+}
+
+.mobile-nav-wrapp ul {
+  list-style: none;
+  height: 60%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile-nav-wrapp ul li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mobile-nav-wrapp ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Bodoni Moda', serif;
+}
+
+.mobile-nav-wrapp.mobile-nav-open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
