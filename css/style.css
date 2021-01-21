@@ -73,8 +73,8 @@ header nav .hamburger-menu-wrapp {
 }
 
 header nav .hamburger-menu-wrapp .hamburger-menu {
-  height: 20px;
-  width: 30px;
+  height: 35px;
+  width: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,39 +87,49 @@ header nav .hamburger-menu-wrapp .hamburger-menu {
           justify-content: space-between;
   cursor: pointer;
   z-index: 50;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
-header nav .hamburger-menu-wrapp .hamburger-menu .line {
-  height: 1px;
-  width: 30px;
-  background: black;
-  z-index: 200;
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 5;
+  -webkit-transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-header nav .hamburger-menu-wrapp .hamburger-menu.mobile-nav-active .line {
-  background: #fff;
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 5;
 }
 
-header nav .hamburger-menu-wrapp .hamburger-menu.mobile-nav-active .line:nth-child(1) {
-  -webkit-transform: rotate(55deg) translateY(15px);
-          transform: rotate(55deg) translateY(15px);
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-  height: 2px;
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 5;
 }
 
-header nav .hamburger-menu-wrapp .hamburger-menu.mobile-nav-active .line:nth-child(2) {
-  opacity: 0;
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 5;
 }
 
-header nav .hamburger-menu-wrapp .hamburger-menu.mobile-nav-active .line:nth-child(3) {
-  -webkit-transform: rotate(-55deg) translateY(-15px);
-          transform: rotate(-55deg) translateY(-15px);
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-  height: 2px;
+.mobile-nav-active .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 5;
+}
+
+.mobile-nav-active .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 5;
+}
+
+.mobile-nav-active .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 5;
 }
 
 .header-gap {
@@ -281,6 +291,9 @@ header nav .hamburger-menu-wrapp .hamburger-menu.mobile-nav-active .line:nth-chi
   height: 100%;
   width: 75%;
   background: #0c0c0c;
+  background: #eeeeee;
+  -webkit-box-shadow: 3px 3px 5px #000;
+          box-shadow: 3px 3px 5px #000;
   right: -500px;
   z-index: 1;
   -webkit-transition: all .8s;
@@ -320,7 +333,7 @@ header nav .hamburger-menu-wrapp .hamburger-menu.mobile-nav-active .line:nth-chi
 
 .mobile-nav-wrapp ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
   font-size: 16px;
   font-family: 'Bodoni Moda', serif;
 }
