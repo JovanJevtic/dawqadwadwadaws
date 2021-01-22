@@ -258,7 +258,7 @@ header {
 
     ul {
         list-style: none;
-        height: 60%;
+        height: 50%;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -283,4 +283,20 @@ header {
         display: flex;
         right: 0;
     }
+}
+
+.mobile-nav li:nth-child(2) {
+    margin-top: 8vh;
+}
+
+.mobile-nav li:nth-child(even) {
+    background: rgb(231, 231, 231);
+    width: 100%;
+}
+
+.mobile-nav-hamburgerbar {
+    background: #fff;
+    width: 100%;
+    height: 8vh;
+    position: absolute;
 }
